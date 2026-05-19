@@ -56,7 +56,7 @@ export default function Projects() {
     },
 
     {
-      id: "mental-health-support",
+      id: "mental-health-system",
 
       status: "in-progress",
 

@@ -1,20 +1,330 @@
-<<<<<<< HEAD
-# React + Vite
+# 🌐 Bhavitha Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive developer portfolio website showcasing my projects, internships, technical skills, certifications, and experience in full-stack web development, cybersecurity, and emerging technologies.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Overview
 
-## React Compiler
+This portfolio represents my journey as a Computer Science Engineering student specializing in Cybersecurity and Blockchain Technology. The website highlights my work in full-stack development, secure backend systems, healthcare applications, blogging platforms, and research-oriented learning experiences.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The portfolio is designed with a modern dark-themed UI, smooth layouts, responsive components, and interactive project sections to provide recruiters and visitors with an engaging user experience.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# bhavitha-portfolio
->>>>>>> 9b9bd6c4a559b28e8817e18989715d06cbabebaa
+## 🚀 Features
+
+- Responsive modern portfolio design
+- Dark-themed professional UI
+- Project showcase with detailed architecture sections
+- Internship and experience highlights
+- Resume preview and download functionality
+- Skills, certifications, and technical highlights
+- Interactive cards and smooth animations
+- Mobile-friendly layout
+- Clean and scalable component structure
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap / Tailwind CSS
+
+### Backend & Database
+- Django
+- Node.js
+- Express.js
+- PostgreSQL
+- MongoDB
+
+### Tools & Platforms
+- Git & GitHub
+- VS Code
+- Postman
+- Render / Vercel / Netlify
+
+---
+
+## 📂 Featured Projects
+
+### 📝 Online Blogging System
+A full-stack blogging platform built using Django and PostgreSQL with secure authentication, CRUD operations, responsive UI, and dynamic content management workflows.
+
+**Key Features**
+- User authentication & authorization
+- Blog creation and management
+- PostgreSQL database integration
+- Responsive frontend design
+- Secure CRUD workflows
+
+---
+
+### 🏥 Hospital Management System
+A MERN stack healthcare platform that streamlines patient records, appointment scheduling, doctor management, and administrative operations.
+
+**Key Features**
+- Appointment management
+- Role-based authentication
+- Patient and doctor dashboards
+- REST API integration
+- Real-time database workflows
+
+---
+
+### 🧠 Mental Health Support Platform
+A secure and user-focused platform designed to provide mental health support resources, user interaction features, and accessible digital assistance.
+
+---
+
+## 💼 Internship Experience
+
+### 🚀 Vehinova Technologies
+Worked on real-world web development projects involving Django, PostgreSQL, authentication systems, backend workflows, and responsive frontend development.
+
+### 🚀 ISRO START Program
+Participated in technical learning modules focused on space science, astronomy, satellite systems, remote sensing, and emerging aerospace technologies.
+
+---
+
+## 🔐 Areas of Interest
+
+- Full-Stack Web Development
+- Cybersecurity
+- Ethical Hacking
+- Networking
+- Cloud Technologies
+- Blockchain Technology
+- Backend Architecture
+- Secure Software Design
+
+---
+
+## 📸 Portfolio Sections
+
+- Hero Section
+- About Me
+- Skills
+- Projects
+- Internship Experience
+- Certifications
+- Resume
+- Contact
+
+---
+
+# ⚙️ Complete Project Setup & Installation Guide
+
+This guide contains all the commands and tools required to set up and run the portfolio project locally.
+
+---
+
+# 🖥️ Prerequisites
+
+Make sure the following software is installed on your system:
+
+- Node.js
+- npm
+- Git
+- VS Code
+
+---
+
+# 📌 1. Install Node.js
+
+Download and install Node.js from:
+
+https://nodejs.org/
+
+Verify installation:
+
+```bash
+node -v
+npm -v
+```
+
+---
+
+# 📌 2. Install Git
+
+Download Git:
+
+https://git-scm.com/
+
+Verify installation:
+
+```bash
+git --version
+```
+
+---
+
+# 📌 3. Create React Project
+
+```bash
+npx create-react-app portfolio
+```
+
+OR using Vite (recommended):
+
+```bash
+npm create vite@latest portfolio
+```
+
+Select:
+- React
+- JavaScript
+
+Navigate into project:
+
+```bash
+cd portfolio
+```
+
+---
+
+# 📌 4. Install Required Dependencies
+
+## React Router
+
+```bash
+npm install react-router-dom
+```
+
+## Icons
+
+```bash
+npm install react-icons
+```
+
+## Animations
+
+```bash
+npm install framer-motion
+```
+
+## Tailwind CSS (if used)
+
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
+---
+
+# 📌 5. Install Bootstrap (Optional)
+
+```bash
+npm install bootstrap
+```
+
+Import Bootstrap in `main.jsx` or `index.js`:
+
+```js
+import 'bootstrap/dist/css/bootstrap.min.css';
+```
+
+---
+
+# 📌 6. Start Development Server
+
+For React CRA:
+
+```bash
+npm start
+```
+
+For Vite:
+
+```bash
+npm run dev
+```
+
+---
+
+# 📌 7. Create Production Build
+
+```bash
+npm run build
+```
+
+---
+
+# 📌 8. GitHub Setup Commands
+
+Initialize git:
+
+```bash
+git init
+```
+
+Add files:
+
+```bash
+git add .
+```
+
+Commit files:
+
+```bash
+git commit -m "Initial portfolio commit"
+```
+
+Connect GitHub repository:
+
+```bash
+git remote add origin https://github.com/your-username/portfolio.git
+```
+
+Push code:
+
+```bash
+git branch -M main
+git push -u origin main
+```
+
+---
+
+# 📌 9. VS Code Extensions Recommended
+
+Install these extensions:
+
+- ES7+ React Snippets
+- Prettier
+- Tailwind CSS IntelliSense
+- Auto Rename Tag
+- Material Icon Theme
+- GitLens
+
+---
+
+# 📌 10. Folder Structure
+
+```bash
+portfolio/
+│
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── styles/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+└── README.md
+```
+
+---
+
+## ⚡ Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/vbhavitha/bhavitha-portfolio.git

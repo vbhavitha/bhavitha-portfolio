@@ -47,21 +47,48 @@ export default function Education() {
 
     <section
       id="education"
-      className="py-24 px-6 bg-[#050816] text-white"
+      className="py-24 px-6 text-white"
     >
 
       {/* TITLE */}
       <div className="text-center mb-20">
 
-        <p className="text-cyan-400 uppercase tracking-[3px] text-sm font-semibold mb-3">
+        <p
+  className="
+    text-cyan-300
+    uppercase
+    tracking-[6px]
+    text-sm
+    font-bold
+    mb-4
+    drop-shadow-[0_0_12px_rgba(34,211,238,0.6)]
+  "
+>
           Education
         </p>
 
-        <h2 className="text-3xl md:text-5xl font-bold mb-5">
+        <h2
+  className="
+    text-4xl
+    md:text-5xl
+    font-extrabold
+    mb-5
+    text-white
+    drop-shadow-[0_0_25px_rgba(255,255,255,0.35)]
+  "
+>
           Academic Background
         </h2>
 
-        <p className="text-gray-500 text-sm md:text-base">
+        <p
+  className="
+    text-gray-200
+    text-lg
+    md:text-xl
+    font-medium
+    tracking-wide
+  "
+>
           My academic journey so far
         </p>
 

@@ -13,7 +13,7 @@ export default function ContactCTA() {
 
     <section
       id="contact"
-      className="py-24 px-6 bg-[#050816] text-white"
+      className="py-24 px-6 text-white"
     >
 
       <motion.div

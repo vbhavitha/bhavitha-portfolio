@@ -8,7 +8,7 @@ export default function Footer() {
 
   return (
 
-    <footer className="bg-[#050816] text-white border-t border-white/10">
+    <footer className="text-white border-t border-white/10">
 
       <div className="max-w-6xl mx-auto px-6 py-10">
 

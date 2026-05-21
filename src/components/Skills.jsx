@@ -90,21 +90,48 @@ export default function Skills() {
 
     <section
       id="skills"
-      className="py-24 px-6 bg-[#050816] text-white"
+      className="py-24 px-6 text-white"
     >
 
       {/* SECTION TITLE */}
       <div className="text-center mb-16">
 
-        <p className="text-cyan-400 uppercase tracking-[3px] text-sm font-semibold mb-3">
+        <p
+  className="
+    text-cyan-300
+    uppercase
+    tracking-[6px]
+    text-sm
+    font-bold
+    mb-4
+    drop-shadow-[0_0_12px_rgba(34,211,238,0.6)]
+  "
+>
           Skills
         </p>
 
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <h2
+  className="
+    text-4xl
+    md:text-5xl
+    font-extrabold
+    mb-5
+    text-white
+    drop-shadow-[0_0_25px_rgba(255,255,255,0.35)]
+  "
+>
           Tech Pile
         </h2>
 
-        <p className="text-gray-500 text-sm md:text-base">
+        <p
+  className="
+    text-gray-200
+    text-lg
+    md:text-xl
+    font-medium
+    tracking-wide
+  "
+>
           Technologies and tools I work with
         </p>
 
@@ -129,16 +156,18 @@ export default function Skills() {
             viewport={{ once: true }}
 
             className="
-              bg-[#0B1220]/70
-              border border-white/5
-              rounded-3xl
-              p-6
-              shadow-[0_0_20px_rgba(34,211,238,0.03)]
-              hover:border-cyan-500/20
-              hover:shadow-[0_0_30px_rgba(34,211,238,0.08)]
-              transition-all
-              duration-300
-            "
+  bg-[#081120]/88
+  backdrop-blur-md
+  border border-cyan-400/10
+  rounded-3xl
+  p-6
+  shadow-[0_0_30px_rgba(34,211,238,0.08)]
+  hover:border-cyan-400/30
+  hover:shadow-[0_0_40px_rgba(34,211,238,0.15)]
+  transition-all
+  duration-300
+"
+              
           >
 
             {/* HEADER */}

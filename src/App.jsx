@@ -12,6 +12,7 @@ import ExperienceDetails from "./pages/ExperienceDetails";
 import ProjectsPage from "./pages/ProjectsPage";
 import ProjectDetails from "./pages/ProjectDetails";
 import ScrollToTop from "./components/ScrollToTop";
+import aurora from "./assets/aurora.jpg";
 
 function App() {
 
@@ -20,7 +21,21 @@ function App() {
     <BrowserRouter>
     <ScrollToTop />
 
-      <div className="bg-[#050816] min-h-screen">
+      <div
+  className="
+    min-h-screen
+    bg-cover
+    bg-center
+    bg-fixed
+    relative
+  "
+  style={{
+    backgroundImage: `url(${aurora})`,
+  }}
+>{/* GLOBAL OVERLAY */}
+<div className="absolute inset-0 bg-[#020617]/55" />
+{/* CONTENT */}
+<div className="relative z-10"></div>
 
         {/* NAVBAR */}
         <Navbar />

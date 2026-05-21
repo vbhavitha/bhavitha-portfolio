@@ -3,51 +3,56 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 import {
-  ArrowRight,
   Download,
   Mail,
 } from "lucide-react";
 
-import profile from "../assets/profile.png";
 
 export default function Hero() {
 
   return (
 
     <section
-      id="home"
-      className="
-        min-h-[85vh]
-        bg-[#050816]
-        text-white
-        flex items-center justify-center
-        px-6
-      "
-    >
+    
+  id="home"
+  className="
+    relative
+    min-h-screen
+    text-white
+    flex items-center justify-center
+    px-6
+    overflow-hidden
+    
+  "
+  
+>
 
       <div
-        className="
-          max-w-7xl
-          w-full
-          grid md:grid-cols-2
-          gap-8
-          items-center
-          pl-8 md:pl-16
-        "
-      >
+  className="
+    relative z-10
+    max-w-5xl
+    w-full
+    text-center
+    flex
+    flex-col
+    items-center
+    justify-center
+  "
+>
 
         {/* LEFT SIDE */}
         <motion.div
-          initial={{ opacity: 0, x: -80 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-        >
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1 }}
+  className="text-center"
+>
 
           {/* AVAILABLE BADGE */}
           <div
             className="
               inline-flex items-center gap-2
-              px-5 py-2
+              px-7 py-3
               rounded-full
               border border-cyan-500/20
               bg-cyan-500/10
@@ -69,14 +74,15 @@ export default function Hero() {
             </p>
 
           </div>
+{/* BACKGROUND GLOW */}
 
           {/* MAIN HEADING */}
           <h1
             className="
-              text-2xl md:text-4xl
+              text-4xl md:text-6xl
               font-bold
               leading-tight
-              mb-6
+              mb-8
             "
           >
 
@@ -91,9 +97,9 @@ export default function Hero() {
           {/* TYPEWRITER */}
           <h2
             className="
-              text-xl md:text-2xl
+              text-2xl md:text-4xl
               text-gray-300
-              mb-6
+              mb-8
               font-semibold
             "
           >
@@ -119,10 +125,10 @@ export default function Hero() {
           <p
             className="
               text-gray-400
-              text-base
-              leading-relaxed
-              max-w-2xl
-              mb-6
+              text-lg md:text-2xl
+              leading-10
+              max-w-4xl mx-auto
+              mb-8
             "
           >
 
@@ -133,43 +139,28 @@ export default function Hero() {
           </p>
 
           {/* BUTTONS */}
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap justify-center gap-4">
 
-            {/* PROJECT BUTTON */}
-            <Link
-              to="/projects"
-              className="
-                flex items-center gap-2
-                bg-cyan-400
-                text-black
-                px-5 py-3
-                rounded-2xl
-                font-semibold
-                hover:scale-105
-                transition duration-300
-              "
-            >
-
-              View Projects
-
-              <ArrowRight size={20} />
-
-            </Link>
+            
 
             {/* RESUME BUTTON */}
             <a
               href="/resume.pdf"
               download
               className="
-                flex items-center gap-2
-                border border-gray-700
-                px-7 py-4
-                rounded-2xl
-                text-gray-300
-                hover:border-cyan-400
-                hover:text-cyan-400
-                transition duration-300
-              "
+  flex items-center gap-3
+  bg-gradient-to-r
+  from-cyan-500
+  to-blue-600
+  hover:scale-105
+  transition-all duration-300
+  px-6 py-2
+  rounded-2xl
+  text-white
+  text-xl
+  font-semibold
+  shadow-[0_0_30px_rgba(34,211,238,0.25)]
+"
             >
 
               <Download size={20} />
@@ -182,15 +173,19 @@ export default function Hero() {
             <Link
               to="/contact"
               className="
-                flex items-center gap-2
-                border border-gray-700
-                px-7 py-4
-                rounded-2xl
-                text-gray-300
-                hover:border-cyan-400
-                hover:text-cyan-400
-                transition duration-300
-              "
+  flex items-center gap-3
+  border border-cyan-500/40
+  bg-[#0B1220]
+  px-6 py-2
+  rounded-2xl
+  text-cyan-300
+  text-xl
+  font-semibold
+  hover:bg-cyan-500/10
+  hover:border-cyan-400
+  hover:text-cyan-200
+  transition-all duration-300
+"
             >
 
               <Mail size={20} />
@@ -203,55 +198,7 @@ export default function Hero() {
 
         </motion.div>
 
-        {/* RIGHT SIDE IMAGE */}
-        <motion.div
-          initial={{ opacity: 0, x: 80 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          className="flex justify-center"
-        >
-
-          <div className="relative">
-
-            {/* GLOW EFFECT */}
-            <div
-              className="
-                absolute inset-0
-                rounded-full
-                bg-cyan-400/10
-                blur-3xl
-              "
-            />
-
-            {/* IMAGE BORDER */}
-            <div
-              className="
-                relative
-                w-[200px] h-[200px]
-                md:w-[280px] md:h-[280px]
-                rounded-full
-                border-4 border-cyan-500/40
-                overflow-hidden
-                shadow-[0_0_50px_rgba(34,211,238,0.2)]
-              "
-            >
-
-              <img
-                src={profile}
-                alt="Bhavitha"
-                className="
-                  w-full
-                  h-full
-                  object-cover
-                  brightness-75
-                "
-              />
-
-            </div>
-
-          </div>
-
-        </motion.div>
+        
 
       </div>
 

@@ -73,8 +73,8 @@ export default function Education() {
     md:text-5xl
     font-extrabold
     mb-5
-    text-white
-    drop-shadow-[0_0_25px_rgba(255,255,255,0.35)]
+    bg-gradient-to-r from-white via-slate-200 to-cyan-300 bg-clip-text text-transparent
+drop-shadow-[0_0_20px_rgba(168,85,247,0.25)]
   "
 >
           Academic Background

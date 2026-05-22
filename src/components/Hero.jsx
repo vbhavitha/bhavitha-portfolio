@@ -1,6 +1,7 @@
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import profile from "../assets/profile.png";
 
 import {
   Download,
@@ -30,13 +31,13 @@ export default function Hero() {
       <div
   className="
     relative z-10
-    max-w-5xl
+    max-w-7xl
     w-full
-    text-center
     flex
-    flex-col
+    flex-col lg:flex-row
     items-center
-    justify-center
+    justify-between
+    gap-20
   "
 >
 
@@ -45,24 +46,24 @@ export default function Hero() {
   initial={{ opacity: 0, y: 40 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 1 }}
-  className="text-center"
+  className="text-left max-w-2xl"
 >
 
           {/* AVAILABLE BADGE */}
           <div
             className="
-              inline-flex items-center gap-2
-              px-7 py-3
-              rounded-full
-              border border-cyan-500/20
-              bg-cyan-500/10
-              mb-8
-            "
+  inline-flex items-center gap-2
+  px-5 py-2
+  rounded-full
+  border border-cyan-500/20
+  bg-cyan-500/10
+  mb-6
+"
           >
 
             <div
               className="
-                w-3 h-3
+                w-2.5 h-2.5
                 rounded-full
                 bg-cyan-400
                 animate-pulse
@@ -125,9 +126,9 @@ export default function Hero() {
           <p
             className="
               text-gray-400
-              text-lg md:text-2xl
-              leading-10
-              max-w-4xl mx-auto
+              text-base md:text-xl
+              leading-9
+              max-w-3xl
               mb-8
             "
           >
@@ -139,7 +140,7 @@ export default function Hero() {
           </p>
 
           {/* BUTTONS */}
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-start gap-4">
 
             
 
@@ -197,7 +198,80 @@ export default function Hero() {
           </div>
 
         </motion.div>
+{/* RIGHT SIDE IMAGE */}
+<motion.div
+  initial={{ opacity: 0, x: 60 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 1 }}
+  className="
+    hidden lg:flex
+    items-center
+    justify-center
+    flex-1
+    relative
+  "
+>
 
+  {/* GLOW */}
+  <div
+  className="
+    absolute
+    w-[420px]
+    h-[420px]
+    rounded-full
+
+    bg-gradient-to-br
+    from-cyan-400/20
+    via-blue-500/10
+    to-transparent
+
+    blur-[90px]
+    opacity-80
+  "
+/>
+<div
+  className="
+    absolute
+    w-[360px]
+    h-[360px]
+    rounded-full
+    border
+    border-cyan-300/10
+    shadow-[0_0_30px_rgba(59,130,246,0.12)]
+  "
+/>
+
+  {/* IMAGE */}
+  <img
+    src={profile}
+    alt="Bhavitha"
+    className="
+  relative
+  z-10
+  w-[340px]
+  h-[340px]
+  object-cover
+  object-[center_top]
+  rounded-full
+
+  brightness-90
+  contrast-95
+  saturate-90
+
+  border-[3px]
+  border-cyan-300/20
+
+  shadow-[0_0_45px_rgba(34,211,238,0.18)]
+
+  opacity-95
+
+  hover:scale-105
+  transition-all
+  duration-500
+"
+  />
+
+</motion.div>
         
 
       </div>

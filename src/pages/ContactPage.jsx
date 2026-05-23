@@ -51,21 +51,19 @@ export default function ContactPage() {
 
   return (
 
-    <div className="bg-[#050816] text-white min-h-screen pt-28">
+    <div className="text-white min-h-screen px-6 pt-28 pb-0">
 
       {/* HEADING */}
       <div className="text-center mb-16">
 
-        <p className="text-cyan-400 uppercase tracking-[4px] font-semibold mb-3">
-          CONTACT
-        </p>
+        
 
         <h1 className="text-3xl md:text-4xl font-bold mb-4">
           Get in Touch
         </h1>
 
         <p className="text-gray-400 text-sm md:text-base">
-          Have a project in mind or want to connect? Drop me a message.
+          Want to contact or collaborate? Ping me up.
         </p>
 
       </div>
@@ -242,7 +240,7 @@ export default function ContactPage() {
               <textarea
                 rows="6"
                 name="message"
-                placeholder="Tell me about your project or idea..."
+                placeholder="Have a project or idea? Let’s connect and bring it to life together."
                 required
 
                 className="
@@ -265,17 +263,26 @@ export default function ContactPage() {
               disabled={loading}
 
               className="
-                bg-cyan-400
-                hover:bg-cyan-300
-                text-black
-                font-semibold
-                px-6 py-3
-                rounded-xl
-                text-sm
-                transition-all
-                duration-300
-                hover:scale-105
-              "
+  inline-flex items-center gap-3
+
+  bg-cyan-400
+  hover:bg-cyan-300
+
+  text-black
+  text-base
+  font-semibold
+
+  px-6 py-2
+
+  rounded-xl
+
+  transition
+  duration-300
+
+  hover:scale-105
+
+  shadow-[0_0_20px_rgba(34,211,238,0.25)]
+"
             >
 
               {loading ? "Sending..." : "Send Message"}

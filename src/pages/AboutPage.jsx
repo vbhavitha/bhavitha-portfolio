@@ -4,19 +4,17 @@ export default function AboutPage() {
 
   return (
 
-    <div className="bg-[#050816] text-white min-h-screen px-6 pt-28 pb-10">
+    <div className="text-white min-h-screen px-6 pt-28 pb-0">
 
       <div className="max-w-4xl mx-auto">
 
         {/* TITLE */}
         <div className="text-center mb-14">
 
-          <p className="text-cyan-400 uppercase tracking-[4px] font-semibold mb-3">
-            About
-          </p>
+          
 
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
-            My Story
+            About Me
           </h1>
 
           <p className="text-gray-400 text-sm md:text-base">

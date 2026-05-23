@@ -25,14 +25,12 @@ export default function EducationPage() {
 
   return (
 
-    <div className="bg-[#050816] text-white min-h-screen pt-28">
+    <div className="text-white min-h-screen px-6 pt-28 pb-0">
 
       {/* TITLE */}
       <div className="text-center mb-14">
 
-        <p className="text-cyan-400 uppercase tracking-[4px] font-semibold mb-3">
-          Education
-        </p>
+        
 
         <h1 className="text-3xl md:text-4xl font-bold mb-4">
           Academic Background

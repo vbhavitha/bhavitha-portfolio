@@ -6,14 +6,12 @@ export default function ExperiencePage() {
 
   return (
 
-    <div className="bg-[#050816] min-h-screen text-white pt-28 pb-20">
+    <div className="text-white min-h-screen px-6 pt-28 pb-0">
 
       {/* TITLE */}
       <div className="text-center mb-16">
 
-        <p className="text-cyan-400 uppercase tracking-[4px] font-semibold mb-3">
-          Career
-        </p>
+        
 
         <h1 className="text-3xl md:text-4xl font-bold mb-4">
           Work Experience

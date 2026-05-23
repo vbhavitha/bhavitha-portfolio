@@ -71,7 +71,7 @@ export default function ExperienceDetails() {
 
   return (
 
-    <div className="bg-[#050816] min-h-screen text-white pt-28 pb-20">
+    <div className="text-white min-h-screen px-6 pt-28 pb-0">
 
       <div className="max-w-6xl mx-auto px-6">
 

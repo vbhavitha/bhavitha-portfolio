@@ -75,12 +75,7 @@ export default function ProjectDetails() {
 
     return (
 
-      <div className="
-        bg-[#050816]
-        min-h-screen
-        text-white
-        flex items-center justify-center
-      ">
+      <div className="text-white min-h-screen px-6 pt-28 pb-0">
 
         Project not found
 
@@ -92,7 +87,7 @@ export default function ProjectDetails() {
 
   return (
 
-    <div className="bg-[#050816] text-white min-h-screen pt-28">
+    <div className="text-white min-h-screen px-6 pt-28 pb-0">
 
       <div className="max-w-6xl mx-auto px-4">
 
@@ -113,7 +108,7 @@ export default function ProjectDetails() {
         </Link>
 
         {/* TOP SECTION */}
-        <div className="grid lg:grid-cols-[1fr_220px] gap-14">
+        <div className="grid lg:grid-cols-[1fr_220px] gap-14 items-start">
 
           {/* LEFT CONTENT */}
           <div>
@@ -443,9 +438,17 @@ export default function ProjectDetails() {
           </div>
 
           {/* SIDEBAR */}
-          <div className="hidden lg:block">
+          {/* SIDEBAR */}
+<div className="hidden lg:block">
 
-            <div className="sticky top-28">
+  <div
+    className="
+      fixed
+      top-32
+      right-[14%]
+      w-[220px]
+    "
+  >
 
               <p className="
                 text-gray-500
@@ -603,11 +606,14 @@ export default function ProjectDetails() {
       </div>
 
       {/* FOOTER */}
-      <div className="mt-12">
+      
 
-        <Footer />
+        <div className="mt-12">
 
-      </div>
+  <Footer />
+
+</div>
+
 
     </div>
 

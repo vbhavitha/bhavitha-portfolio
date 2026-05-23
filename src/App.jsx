@@ -31,7 +31,7 @@ function App() {
           bg-center
           bg-fixed
           relative
-          overflow-hidden
+          
         "
         style={{
           backgroundImage: `url(${aurora})`,

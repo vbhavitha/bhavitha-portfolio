@@ -81,7 +81,7 @@ export default function ContactCTA() {
           "
         >
 
-          Let’s Build Something Great
+          Let’s Cook Something Great
 
         </h2>
 
@@ -98,9 +98,9 @@ export default function ContactCTA() {
           "
         >
 
-          I'm always open to discussing new projects,
-          creative ideas, or opportunities to be part
-          of your vision.
+          I am currently looking for new opportunities and my inbox is always open. 
+          Whether you have a question or just wanted to discuss something, 
+          I'll try my best to get back to you!
 
         </p>
 
@@ -110,21 +110,29 @@ export default function ContactCTA() {
           onClick={() => window.scrollTo(0, 0)}
 
           className="
-            inline-flex items-center gap-3
-            bg-cyan-400
-            hover:bg-cyan-300
-            text-black
-            text-base
-            font-semibold
-            px-6 py-2
-            rounded-xl
-            transition-all
-            duration-300
-            hover:scale-105
-          "
+  inline-flex items-center gap-3
+
+  bg-cyan-400
+  hover:bg-cyan-300
+
+  text-black
+  text-lg
+  font-semibold
+
+  px-8 py-4
+
+  rounded-2xl
+
+  transition
+  duration-300
+
+  hover:scale-105
+
+  shadow-[0_0_20px_rgba(34,211,238,0.25)]
+"
         >
 
-          Get in Touch
+          Get Connected
 
           <ArrowRight size={22} />
 

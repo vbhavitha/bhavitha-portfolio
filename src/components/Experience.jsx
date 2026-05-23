@@ -307,29 +307,36 @@ drop-shadow-[0_0_20px_rgba(168,85,247,0.25)]
         </div>
 
         {/* BOTTOM BUTTON */}
-        <div className="flex justify-center mt-16">
+        {/* BOTTOM BUTTON */}
+<div className="flex justify-center mt-16">
 
-          <Link
-            to="/experience"
-            className="
-              flex items-center gap-2
-              text-cyan-400
-              text-base
-              font-semibold
-              hover:gap-4
-              transition-all
-              duration-300
-            "
-          >
+  <Link
+    to="/experience"
+    onClick={() => window.scrollTo(0, 0)}
 
-            View full experience
+    className="
+      flex items-center gap-2
+      text-cyan-300
+      text-lg
+      font-semibold
 
-            <ArrowRight size={20} />
+      hover:text-cyan-200
+      hover:gap-3
 
-          </Link>
+      transition
+      duration-200
 
-        </div>
+      drop-shadow-[0_0_10px_rgba(34,211,238,0.45)]
+    "
+  >
 
+    View full experience
+
+    <ArrowRight size={22} />
+
+  </Link>
+
+</div>
       </div>
 
     </section>

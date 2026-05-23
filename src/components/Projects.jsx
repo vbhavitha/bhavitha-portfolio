@@ -118,7 +118,7 @@ drop-shadow-[0_0_20px_rgba(168,85,247,0.25)]
 
         <p
   className="
-    text-gray-200
+    text-gray-300
     text-lg
     md:text-xl
     font-medium
@@ -136,6 +136,7 @@ drop-shadow-[0_0_20px_rgba(168,85,247,0.25)]
         {projects.map((project, index) => (
 
           <motion.div
+          className="relative"
             key={index}
 
             initial={{ opacity: 0, y: 40 }}
@@ -155,14 +156,18 @@ drop-shadow-[0_0_20px_rgba(168,85,247,0.25)]
               onClick={() => window.scrollTo(0, 0)}
 
               className="
-                block
-                bg-[#0B1220]/70
+
+  relative
+  z-10
+  block
+  cursor-pointer
+  bg-[#0B1220]/70
                 border border-white/5
                 rounded-3xl
                 p-6
                 shadow-[0_0_20px_rgba(34,211,238,0.03)]
                 hover:border-cyan-500/20
-                hover:shadow-[0_0_30px_rgba(34,211,238,0.08)]
+                hover:shadow-[0_0_20px_rgba(34,211,238,0.05)]
                 hover:-translate-y-1
                 transition-all
                 duration-300
@@ -197,21 +202,21 @@ drop-shadow-[0_0_20px_rgba(168,85,247,0.25)]
 
                   </span>
 
-                  <span className="text-sm text-gray-500">
+                  <span className="text-sm text-gray-400">
                     {project.category}
                   </span>
 
                 </div>
 
                 {/* TITLE */}
-                <h3 className="text-2xl font-semibold text-gray-100 mb-4">
+                <h3 className="text-2xl font-semibold text-white mb-4">
 
                   {project.title}
 
                 </h3>
 
                 {/* DESCRIPTION */}
-                <p className="text-gray-400 text-[15px] leading-8 mb-8">
+                <p className="text-gray-200 text-[15px] leading-8 mb-8">
 
                   {project.description}
 
@@ -226,14 +231,17 @@ drop-shadow-[0_0_20px_rgba(168,85,247,0.25)]
                       key={techIndex}
 
                       className="
-                        px-3 py-1.5
-                        rounded-lg
-                        bg-cyan-500/10
-                        border border-cyan-500/10
-                        text-cyan-300
-                        text-xs
-                        font-medium
-                      "
+  px-3 py-1.5
+  rounded-lg
+  bg-cyan-500/10
+  border border-cyan-500/10
+  text-cyan-300
+  text-xs
+  font-medium
+  transition-all
+  duration-200
+  hover:bg-cyan-500/20
+"
                     >
 
                       {tech}
@@ -255,30 +263,35 @@ drop-shadow-[0_0_20px_rgba(168,85,247,0.25)]
                 "
               >
 
-                <p
-                  className="
-                    flex items-center gap-2
-                    text-cyan-400
-                    text-sm
-                    font-semibold
-                    transition-all
-                    duration-300
-                  "
-                >
+                <div
+  className="
+    flex items-center gap-2
+    text-cyan-400
+    text-sm
+    font-semibold
+    hover:text-cyan-300
+    transition-all
+    duration-300
+  "
+>
 
                   View project
 
                   <ArrowRight size={18} />
 
-                </p>
+                </div>
 
                 <div
                   className="
+                  pointer-events-none
                     w-11 h-11
                     rounded-full
                     border border-white/10
                     flex items-center justify-center
-                    text-gray-400
+                    text-cyan-300
+hover:text-cyan-200
+transition
+duration-200
                   "
                 >
 
@@ -297,30 +310,36 @@ drop-shadow-[0_0_20px_rgba(168,85,247,0.25)]
       </div>
 
       {/* BOTTOM BUTTON */}
-      <div className="flex justify-center mt-16">
+      {/* BOTTOM BUTTON */}
+<div className="flex justify-center mt-16">
 
-        <Link
-          to="/projects"
-          onClick={() => window.scrollTo(0, 0)}
+  <Link
+    to="/projects"
+    onClick={() => window.scrollTo(0, 0)}
 
-          className="
-            flex items-center gap-2
-            text-cyan-400
-            text-base
-            font-semibold
-            hover:gap-4
-            transition-all
-            duration-300
-          "
-        >
+    className="
+      flex items-center gap-2
+      text-cyan-300
+      text-lg
+      font-semibold
 
-          View all projects
+      hover:text-cyan-200
+      hover:gap-3
 
-          <ArrowRight size={20} />
+      transition
+      duration-200
 
-        </Link>
+      drop-shadow-[0_0_10px_rgba(34,211,238,0.45)]
+    "
+  >
 
-      </div>
+    View all projects
+
+    <ArrowRight size={22} />
+
+  </Link>
+
+</div>
 
     </section>
 

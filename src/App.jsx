@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 import Home from "./pages/Home";
 import AboutPage from "./pages/AboutPage";
@@ -11,7 +13,7 @@ import ExperiencePage from "./pages/ExperiencePage";
 import ExperienceDetails from "./pages/ExperienceDetails";
 import ProjectsPage from "./pages/ProjectsPage";
 import ProjectDetails from "./pages/ProjectDetails";
-import ScrollToTop from "./components/ScrollToTop";
+
 import aurora from "./assets/aurora.jpg";
 
 function App() {
@@ -19,65 +21,95 @@ function App() {
   return (
 
     <BrowserRouter>
-    <ScrollToTop />
+
+      <ScrollToTop />
 
       <div
-  className="
-    min-h-screen
-    bg-cover
-    bg-center
-    bg-fixed
-    relative
-  "
-  style={{
-    backgroundImage: `url(${aurora})`,
-  }}
->{/* GLOBAL OVERLAY */}
-<div className="absolute inset-0 bg-[#020617]/55" />
-{/* CONTENT */}
-<div className="relative z-10"></div>
+        className="
+          min-h-screen
+          bg-cover
+          bg-center
+          bg-fixed
+          relative
+          overflow-hidden
+        "
+        style={{
+          backgroundImage: `url(${aurora})`,
+        }}
+      >
 
-        {/* NAVBAR */}
-        <Navbar />
+        {/* DARK OVERLAY */}
+        <div className="absolute inset-0 bg-[#020617]/55 z-0" />
 
-        {/* ALL ROUTES */}
-        <Routes>
+        {/* MAIN CONTENT */}
+        <div className="relative z-10 flex flex-col min-h-screen">
 
-          {/* HOME */}
-          <Route path="/" element={<Home />} />
+          {/* NAVBAR */}
+          <Navbar />
 
-          {/* ABOUT */}
-          <Route path="/about" element={<AboutPage />} />
+          {/* PAGE CONTENT */}
+          <main className="flex-1">
 
-          {/* EDUCATION */}
-          <Route path="/education" element={<EducationPage />} />
+            <Routes>
 
-          {/* RESUME */}
-          <Route path="/resume" element={<ResumePage />} />
+              {/* HOME */}
+              <Route
+                path="/"
+                element={<Home />}
+              />
 
-          {/* CONTACT */}
-          <Route path="/contact" element={<ContactPage />} />
+              {/* ABOUT */}
+              <Route
+                path="/about"
+                element={<AboutPage />}
+              />
 
-          {/* EXPERIENCE */}
-          <Route path="/experience" element={<ExperiencePage />} />
+              {/* EDUCATION */}
+              <Route
+                path="/education"
+                element={<EducationPage />}
+              />
 
-          <Route
-            path="/experience/:id"
-            element={<ExperienceDetails />}
-          />
+              {/* RESUME */}
+              <Route
+                path="/resume"
+                element={<ResumePage />}
+              />
 
-          {/* PROJECTS */}
-          <Route
-            path="/projects"
-            element={<ProjectsPage />}
-          />
+              {/* CONTACT */}
+              <Route
+                path="/contact"
+                element={<ContactPage />}
+              />
 
-          <Route
-            path="/projects/:id"
-            element={<ProjectDetails />}
-          />
+              {/* EXPERIENCE */}
+              <Route
+                path="/experience"
+                element={<ExperiencePage />}
+              />
 
-        </Routes>
+              <Route
+                path="/experience/:id"
+                element={<ExperienceDetails />}
+              />
+
+              {/* PROJECTS */}
+              <Route
+                path="/projects"
+                element={<ProjectsPage />}
+              />
+
+              <Route
+                path="/projects/:id"
+                element={<ProjectDetails />}
+              />
+
+            </Routes>
+
+          </main>
+
+
+        </div>
 
       </div>
 

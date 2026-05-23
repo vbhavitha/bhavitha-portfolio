@@ -27,11 +27,11 @@ export default function Footer() {
           {/* LEFT SIDE */}
           <div className="text-center md:text-left">
 
-            <h2 className="text-xl font-bold text-cyan-400 mb-2">
+            <h2 className="text-xl font-bold text-cyan-300 drop-shadow-[0_0_8px_rgba(34,211,238,0.45)] mb-2">
               Bhavitha
             </h2>
 
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-200">
               Cybersecurity & MERN Developer
             </p>
 
@@ -48,8 +48,9 @@ export default function Footer() {
 
               className="
                 flex items-center gap-2
-                text-sm text-gray-400
-                hover:text-cyan-400
+                text-sm text-gray-200
+hover:text-cyan-300
+drop-shadow-[0_0_8px_rgba(34,211,238,0.35)]
                 transition-all duration-300
               "
             >
@@ -67,8 +68,9 @@ export default function Footer() {
 
               className="
                 flex items-center gap-2
-                text-sm text-gray-400
-                hover:text-cyan-400
+                text-sm text-gray-200
+hover:text-cyan-300
+drop-shadow-[0_0_8px_rgba(34,211,238,0.35)]
                 transition-all duration-300
               "
             >
@@ -84,8 +86,9 @@ export default function Footer() {
 
               className="
                 flex items-center gap-2
-                text-sm text-gray-400
-                hover:text-cyan-400
+                text-sm text-gray-200
+hover:text-cyan-300
+drop-shadow-[0_0_8px_rgba(34,211,238,0.35)]
                 transition-all duration-300
               "
             >
@@ -103,7 +106,7 @@ export default function Footer() {
         <div className="border-t border-white/10 mt-8 pt-6">
 
           {/* COPYRIGHT */}
-          <p className="text-center text-gray-500 text-xs">
+          <p className="text-center text-gray-300 text-xs">
 
             © 2026 Bhavitha.
             Exploring tech beyond limits.

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import {
   GraduationCap,
@@ -95,19 +96,19 @@ drop-shadow-[0_0_20px_rgba(168,85,247,0.25)]
       </div>
 
       {/* TIMELINE */}
-      <div className="max-w-5xl mx-auto relative">
+      <div className="max-w-5xl mx-auto relative lg:pl-12">
 
         {/* VERTICAL LINE */}
-        <div
-          className="
-            absolute
-            left-3 md:left-1/2
-            top-0
-            h-full
-            w-[1px]
-            bg-cyan-500/10
-          "
-        />
+<div
+  className="
+    absolute
+    left-3 md:left-0
+    top-0
+    h-full
+    w-[1px]
+    bg-cyan-500/10
+  "
+/>
 
         {/* EDUCATION ITEMS */}
         <div className="space-y-14">
@@ -128,49 +129,47 @@ drop-shadow-[0_0_20px_rgba(168,85,247,0.25)]
               viewport={{ once: true }}
 
               className="
-                relative
-                md:w-[calc(50%-40px)]
-                ml-12 md:ml-0
-              "
+  relative
+  md:w-[calc(100%-180px)]
+  ml-12
+"
 
-              style={{
-                marginLeft:
-                  window.innerWidth >= 768
-                    ? index % 2 === 0
-                      ? "0"
-                      : "auto"
-                    : "3rem",
-              }}
+              
             >
 
               {/* TIMELINE DOT */}
-              <div
-                className="
-                  absolute
-                  -left-9 md:left-auto
-                  md:-right-[52px]
-                  top-8
-                  w-4 h-4
-                  rounded-full
-                  bg-cyan-400
-                  shadow-[0_0_15px_rgba(34,211,238,0.8)]
-                "
-              />
+<div
+  className="
+    absolute
+    top-8
+    -left-[28px]
+
+    w-3
+    h-3
+    rounded-full
+    bg-cyan-400
+
+    shadow-[0_0_10px_rgba(34,211,238,0.7)]
+  "
+/>
 
               {/* CARD */}
-              <div
-                className="
-                  bg-[#0B1220]/70
-                  border border-white/5
-                  rounded-3xl
-                  p-6 md:p-7
-                  shadow-[0_0_20px_rgba(34,211,238,0.03)]
-                  hover:border-cyan-500/20
-                  hover:shadow-[0_0_30px_rgba(34,211,238,0.08)]
-                  transition-all
-                  duration-300
-                "
-              >
+              <Link
+  to="/education"
+  className="
+  block
+  bg-[#0B1220]/70
+  border border-white/5
+  rounded-3xl
+  p-6 md:p-7
+  shadow-[0_0_20px_rgba(34,211,238,0.03)]
+  hover:border-cyan-500/20
+  hover:shadow-[0_0_30px_rgba(34,211,238,0.08)]
+  hover:-translate-y-1
+  transition-all
+  duration-300
+"
+>
 
                 {/* HEADER */}
                 <div className="flex justify-between items-start gap-6 mb-5">
@@ -253,7 +252,7 @@ drop-shadow-[0_0_20px_rgba(168,85,247,0.25)]
 
                 </ul>
 
-              </div>
+              </Link>
 
             </motion.div>
 

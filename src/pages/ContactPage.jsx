@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-
+import { BadgeCheck } from "lucide-react";
 import Footer from "../components/Footer";
 
 export default function ContactPage() {
@@ -72,9 +72,48 @@ export default function ContactPage() {
       <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-6">
 
         {/* LEFT SIDE */}
-        <div className="bg-[#0B1220]/80 border border-white/10 rounded-2xl p-6 h-fit">
+<div className="
+  bg-[#0B1220]/55
 
-          <h2 className="text-xl font-semibold mb-6">
+  border border-cyan-500/15
+
+  rounded-[30px]
+
+  p-8
+
+  h-fit
+
+  backdrop-blur-xl
+
+  shadow-[0_0_40px_rgba(34,211,238,0.06)]
+
+  relative
+  overflow-hidden
+">
+
+  {/* GLOW */}
+  <div
+    className="
+      absolute
+      inset-0
+
+      bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.10),transparent_40%)]
+
+      pointer-events-none
+    "
+  />
+
+
+
+          <h2
+  className="
+    text-3xl
+    font-bold
+    mb-8
+    relative
+    z-10
+  "
+>
             Connect
           </h2>
 
@@ -83,7 +122,30 @@ export default function ContactPage() {
             {/* EMAIL */}
             <a
               href="mailto:bhavitha.vakkalagadda@gmail.com"
-              className="flex items-center gap-3 text-sm text-gray-400 hover:text-cyan-400 transition"
+              className="
+  flex items-center gap-4
+
+  text-gray-300
+
+  hover:text-cyan-400
+
+  transition-all duration-300
+
+  border border-cyan-500/10
+
+  hover:border-cyan-400/20
+
+  bg-cyan-500/[0.03]
+
+  rounded-2xl
+
+  px-5 py-4
+
+  hover:bg-cyan-500/[0.05]
+
+  relative
+  z-10
+"
             >
 
               <span className="text-lg">✉</span>
@@ -99,7 +161,30 @@ export default function ContactPage() {
               href="https://github.com/vbhavitha"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 text-sm text-gray-400 hover:text-cyan-400 transition"
+              className="
+  flex items-center gap-4
+
+  text-gray-300
+
+  hover:text-cyan-400
+
+  transition-all duration-300
+
+  border border-cyan-500/10
+
+  hover:border-cyan-400/20
+
+  bg-cyan-500/[0.03]
+
+  rounded-2xl
+
+  px-5 py-4
+
+  hover:bg-cyan-500/[0.05]
+
+  relative
+  z-10
+"
             >
 
               <svg
@@ -126,7 +211,30 @@ export default function ContactPage() {
               href="https://linkedin.com/in/vakkalagadda-bhavitha"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 text-sm text-gray-400 hover:text-cyan-400 transition"
+              className="
+  flex items-center gap-4
+
+  text-gray-300
+
+  hover:text-cyan-400
+
+  transition-all duration-300
+
+  border border-cyan-500/10
+
+  hover:border-cyan-400/20
+
+  bg-cyan-500/[0.03]
+
+  rounded-2xl
+
+  px-5 py-4
+
+  hover:bg-cyan-500/[0.05]
+
+  relative
+  z-10
+"
             >
 
               <span className="text-lg">in</span>
@@ -137,12 +245,77 @@ export default function ContactPage() {
 
             </a>
 
+{/* CREDLY */}
+<a
+  href="https://www.credly.com/users/v-bhavitha"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    flex items-center gap-4
+
+    text-gray-300
+
+    hover:text-cyan-400
+
+    transition-all duration-300
+
+    border border-cyan-500/10
+
+    hover:border-cyan-400/20
+
+    bg-cyan-500/[0.03]
+
+    rounded-2xl
+
+    px-5 py-4
+
+    hover:bg-cyan-500/[0.05]
+
+    relative
+    z-10
+  "
+>
+
+  <BadgeCheck className="w-5 h-5" />
+
+  <span>
+    credly.com/users/v-bhavitha
+  </span>
+
+</a>
+
           </div>
 
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="bg-[#0B1220]/80 border border-white/10 rounded-3xl p-8">
+        <div className="
+  bg-[#0B1220]/55
+
+  border border-cyan-500/15
+
+  rounded-[32px]
+
+  p-8 md:p-10
+
+  backdrop-blur-xl
+
+  shadow-[0_0_40px_rgba(34,211,238,0.06)]
+
+  relative
+  overflow-hidden
+">
+  {/* FORM GLOW */}
+<div
+  className="
+    absolute
+    inset-0
+
+    bg-[radial-gradient(circle_at_bottom_right,rgba(168,85,247,0.10),transparent_40%)]
+
+    pointer-events-none
+  "
+/>
 
           <form
             ref={form}
@@ -168,9 +341,15 @@ export default function ContactPage() {
 
                   className="
                     w-full
-                    bg-[#1A2238]
-                    border border-white/5
-                    rounded-xl px-4 py-3 text-sm
+                    bg-[#131C30]/80
+
+border border-cyan-500/10
+
+focus:border-cyan-400/30
+
+rounded-2xl
+
+transition-all duration-300 px-4 py-3 text-sm
                     outline-none
                     text-white
                   "
@@ -193,9 +372,15 @@ export default function ContactPage() {
 
                   className="
                     w-full
-                    bg-[#1A2238]
-                    border border-white/5
-                    rounded-xl px-4 py-3 text-sm
+                    bg-[#131C30]/80
+
+border border-cyan-500/10
+
+focus:border-cyan-400/30
+
+rounded-2xl
+
+transition-all duration-300 px-4 py-3 text-sm
                     outline-none
                     text-white
                   "
@@ -220,9 +405,15 @@ export default function ContactPage() {
 
                 className="
                   w-full
-                  bg-[#1A2238]
-                  border border-white/5
-                  rounded-xl px-4 py-3 text-sm
+                  bg-[#131C30]/80
+
+border border-cyan-500/10
+
+focus:border-cyan-400/30
+
+rounded-2xl
+
+transition-all duration-300 px-4 py-3 text-sm
                   outline-none
                   text-white
                 "
@@ -245,9 +436,15 @@ export default function ContactPage() {
 
                 className="
                   w-full
-                  bg-[#1A2238]
-                  border border-white/5
-                  rounded-xl px-4 py-3 text-sm
+                  bg-[#131C30]/80
+
+border border-cyan-500/10
+
+focus:border-cyan-400/30
+
+rounded-2xl
+
+transition-all duration-300 px-4 py-3 text-sm
                   outline-none
                   resize-none
                   text-white
@@ -263,25 +460,24 @@ export default function ContactPage() {
               disabled={loading}
 
               className="
-  inline-flex items-center gap-3
+  inline-flex items-center justify-center gap-3
 
   bg-cyan-400
   hover:bg-cyan-300
 
   text-black
-  text-base
+  text-sm
   font-semibold
 
-  px-6 py-2
+  px-7 py-3
 
-  rounded-xl
+  rounded-2xl
 
-  transition
-  duration-300
+  transition-all duration-300
 
   hover:scale-105
 
-  shadow-[0_0_20px_rgba(34,211,238,0.25)]
+  shadow-[0_0_25px_rgba(34,211,238,0.25)]
 "
             >
 

@@ -81,7 +81,7 @@ drop-shadow-[0_0_20px_rgba(168,85,247,0.25)]
         "
       >
 
-        <div className="grid md:grid-cols-[220px_1fr] gap-10">
+        <div className="grid md:grid-cols-[220px_1fr] gap-16">
 
           {/* LEFT INFO PANEL */}
           <div className="space-y-7">
@@ -151,6 +151,90 @@ drop-shadow-[0_0_20px_rgba(168,85,247,0.25)]
               </div>
 
             </div>
+            <br></br>
+            <br></br>
+
+{/* CURRENTLY EXPLORING */}
+<div className="pt-2">
+
+  <p
+    className="
+      text-xs
+      uppercase
+      tracking-[3px]
+      text-cyan-400
+      font-semibold
+      mb-4
+    "
+  >
+    Currently Exploring
+  </p>
+
+  <div className="space-y-3">
+
+    {/* ITEM */}
+    <div
+      className="
+        px-4 py-3
+        rounded-xl
+        bg-cyan-500/5
+        border border-cyan-500/10
+        text-sm text-gray-300
+        hover:border-cyan-400/20
+        transition-all duration-300
+      "
+    >
+      • Ethical Hacking
+    </div>
+
+    {/* ITEM */}
+    <div
+      className="
+        px-4 py-3
+        rounded-xl
+        bg-cyan-500/5
+        border border-cyan-500/10
+        text-sm text-gray-300
+        hover:border-cyan-400/20
+        transition-all duration-300
+      "
+    >
+      • Secure Backend Systems
+    </div>
+
+    {/* ITEM */}
+    <div
+      className="
+        px-4 py-3
+        rounded-xl
+        bg-cyan-500/5
+        border border-cyan-500/10
+        text-sm text-gray-300
+        hover:border-cyan-400/20
+        transition-all duration-300
+      "
+    >
+      • Cloud & DevOps
+    </div>
+
+    {/* ITEM */}
+    <div
+      className="
+        px-4 py-3
+        rounded-xl
+        bg-cyan-500/5
+        border border-cyan-500/10
+        text-sm text-gray-300
+        hover:border-cyan-400/20
+        transition-all duration-300
+      "
+    >
+      • MERN Architecture
+    </div>
+
+  </div>
+
+</div>
 
           </div>
 
@@ -182,6 +266,41 @@ drop-shadow-[0_0_20px_rgba(168,85,247,0.25)]
               while continuously learning modern technologies.
 
             </p>
+
+
+{/* TECH STACK */}
+<div className="flex flex-wrap gap-3 mb-10">
+
+  {[
+    "React",
+    "Node.js",
+    "Django",
+    "PostgreSQL",
+    "Cybersecurity",
+    "Cloud",
+  ].map((tech, index) => (
+
+    <span
+      key={index}
+      className="
+        px-4 py-2
+        rounded-full
+        bg-cyan-500/10
+        border border-cyan-500/20
+        text-cyan-300
+        text-sm
+        hover:bg-cyan-500/20
+        transition-all duration-300
+      "
+    >
+
+      {tech}
+
+    </span>
+
+  ))}
+
+</div>
 
             {/* QUOTE */}
             <div className="border-l-2 border-cyan-400 pl-5 mb-9">

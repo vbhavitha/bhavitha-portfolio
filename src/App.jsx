@@ -13,6 +13,7 @@ import ExperiencePage from "./pages/ExperiencePage";
 import ExperienceDetails from "./pages/ExperienceDetails";
 import ProjectsPage from "./pages/ProjectsPage";
 import ProjectDetails from "./pages/ProjectDetails";
+import CertificationsPage from "./pages/CertificationsPage";
 
 import aurora from "./assets/aurora.jpg";
 
@@ -103,6 +104,8 @@ function App() {
                 path="/projects/:id"
                 element={<ProjectDetails />}
               />
+
+              <Route path="/certifications" element={<CertificationsPage />} />
 
             </Routes>
 

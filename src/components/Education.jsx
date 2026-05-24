@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import {
   GraduationCap,
   MapPin,
+  ArrowRight,
 } from "lucide-react";
 
 export default function Education() {
@@ -260,8 +261,39 @@ drop-shadow-[0_0_20px_rgba(168,85,247,0.25)]
 
         </div>
 
-      </div>
+</div>
 
-    </section>
+{/* BOTTOM BUTTON */}
+<div className="flex justify-center mt-16">
+
+  <Link
+    to="/certifications"
+    onClick={() => window.scrollTo(0, 0)}
+
+    className="
+      flex items-center gap-2
+      text-cyan-300
+      text-lg
+      font-semibold
+
+      hover:text-cyan-200
+      hover:gap-3
+
+      transition
+      duration-200
+
+      drop-shadow-[0_0_10px_rgba(34,211,238,0.45)]
+    "
+  >
+
+    View my certifications
+
+    <ArrowRight size={22} />
+
+  </Link>
+
+</div>
+
+</section>
   );
 }

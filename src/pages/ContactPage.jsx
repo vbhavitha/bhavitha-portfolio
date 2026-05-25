@@ -63,7 +63,7 @@ export default function ContactPage() {
         </h1>
 
         <p className="text-gray-400 text-sm md:text-base">
-          Want to contact or collaborate? Ping me up.
+          Want to contact or collaborate? Ping me.
         </p>
 
       </div>

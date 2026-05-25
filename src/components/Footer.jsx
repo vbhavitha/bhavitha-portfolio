@@ -109,7 +109,7 @@ drop-shadow-[0_0_8px_rgba(34,211,238,0.35)]
           <p className="text-center text-gray-300 text-xs">
 
             © 2026 Bhavitha.
-            All rights reserved.
+            Exploring the digital realm, one line of code at a time.
 
           </p>
 

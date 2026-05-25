@@ -85,22 +85,7 @@ export default function ResumePage() {
         <div>
 
           {/* BADGE */}
-          <div
-            className="
-              inline-flex
-              items-center
-              px-4 py-1.5
-              rounded-full
-              border border-cyan-400/30
-              bg-cyan-400/5
-              text-cyan-300
-              text-sm
-              font-medium
-              mb-8
-            "
-          >
-            Resume
-          </div>
+          
 
           {/* HEADING */}
           <h1

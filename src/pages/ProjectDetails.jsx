@@ -317,6 +317,36 @@ export default function ProjectDetails() {
 
               </p>
 
+              <p
+  className="
+    text-gray-400
+    text-base
+    leading-8
+    mb-10
+  "
+>
+  {project.architecture}
+</p>
+
+{/* ARCHITECTURE IMAGE */}
+{project.architectureImage && (
+
+  <div className="mb-10 flex justify-center">
+
+  <img
+    src={project.architectureImage}
+    alt={`${project.title} Architecture`}
+    className="
+      w-[80%]
+      rounded-2xl
+      border border-white/10
+    "
+  />
+
+</div>
+
+)}
+
               <ul className="space-y-4 mt-8">
 
                 {project.architecturePoints.map((point, i) => (

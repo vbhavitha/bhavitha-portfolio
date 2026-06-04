@@ -32,7 +32,7 @@ export default function Footer() {
             </h2>
 
             <p className="text-sm text-gray-200">
-              Cybersecurity & MERN Developer
+              Cybersecurity & Full Stack Developer
             </p>
 
           </div>

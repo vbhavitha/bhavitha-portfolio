@@ -1,6 +1,156 @@
 const projectsData = [
 
   {
+    id: "Securepass-kms",
+
+    title: "SecurePass - KMS",
+
+    category: "Cyber Security",
+
+    status: "completed",
+
+    duration: "2026",
+
+    description:
+      "A secure full-stack cryptographic key management platform that protects sensitive data through advanced encryption, password security analysis, key lifecycle management, audit monitoring, and seamless file protection services.",
+
+    technologies: [
+      "Python",
+      "Flask",
+      "SQLite",
+      "HTML",
+      "CSS",
+  "Cryptography",
+  "Hashlib",
+  "zxcvbn"
+    ],
+
+    overview:
+      "Developed a secure cryptographic key management and password security platform using Flask and SQLite. The system provides password strength analysis, AES and RSA key lifecycle management, secure credential storage, audit logging, password history enforcement, and encrypted file protection workflows. Focused on cybersecurity best practices, cryptographic operations, secure authentication, and scalable backend architecture.",
+
+    problem:
+"Managing passwords, encryption keys, and sensitive files securely becomes increasingly difficult as users handle multiple digital assets across different platforms. Traditional storage methods often lack strong encryption, centralized key management, audit visibility, and password security controls. A secure cryptographic key management platform requires robust encryption workflows, password policy enforcement, key lifecycle management, and protected file handling to minimize security risks and unauthorized access.",
+
+    problemPoints: [
+  "Users require secure storage and management of passwords, encryption keys, and sensitive digital assets",
+  "Weak passwords and password reuse increase the risk of credential compromise and unauthorized access",
+  "Encryption keys must be generated, rotated, revoked, and managed securely throughout their lifecycle",
+  "Organizations need audit visibility, secure file protection, and traceable security operations"
+],
+
+    problemConclusion:
+"The implementation focuses on secure cryptographic architecture, password security enforcement, encryption key lifecycle management, audit monitoring, and protected file handling rather than traditional password storage solutions.",
+
+    goals: [
+  "Build a secure cryptographic key management platform for protecting sensitive credentials and digital assets",
+  "Enable AES and RSA key generation, rotation, revocation, and lifecycle management through structured workflows",
+  "Implement password strength analysis, password history enforcement, and secure credential storage mechanisms",
+  "Provide encrypted file upload, encryption, decryption, and secure download capabilities for protected documents",
+  "Maintain comprehensive audit logging and security monitoring for critical user and cryptographic operations",
+  "Develop a scalable cybersecurity-focused application emphasizing encryption, security, and maintainable architecture"
+],
+
+    architecture:
+"The SecurePass KMS platform is built using Flask-based modular architecture with SQLite for secure data management, enabling password security services, cryptographic key lifecycle operations, audit monitoring, and encrypted file protection workflows. The system separates frontend interfaces, business logic, encryption services, and database operations to ensure maintainable and security-focused application development.",
+
+architectureImage: "/architectures/securepass-architecture.png",
+
+architecturePoints: [
+
+  "Flask handles routing, authentication workflows, backend processing, and security service orchestration",
+
+  "SQLite manages encrypted credential records, cryptographic metadata, audit logs, and application data securely",
+
+  "Cryptography libraries provide AES encryption, RSA key management, secure key generation, and cryptographic operations",
+
+  "Password security modules perform strength analysis, password history validation, hashing, and policy enforcement",
+
+  "File protection services support secure upload, encryption, decryption, and protected document management workflows",
+
+  "Modular security architecture improves maintainability, scalability, auditability, and future cybersecurity feature integration"
+
+],
+    components: [
+
+      {
+    title: "Password Security Module",
+    description:
+      "Performs password strength analysis, secure hashing, history validation, and policy enforcement."
+  },
+
+  {
+    title: "Key Management Service",
+    description:
+      "Handles AES and RSA key generation, rotation, revocation, and lifecycle management."
+  },
+
+  {
+    title: "Audit Logging System",
+    description:
+      "Tracks security events, user actions, cryptographic operations, and compliance-related activities."
+  },
+
+  {
+    title: "File Encryption Service",
+    description:
+      "Provides secure file encryption, decryption, storage, and protected document workflows."
+  }
+
+
+    ],
+
+    agentsIntro:
+      "The SecurePass KMS platform integrates multiple security-focused modules to manage passwords, cryptographic keys, encrypted files, audit records, and secure user operations through centralized cybersecurity workflows.",
+
+    agents: [
+
+      {
+    name: "Password Security Manager",
+    description:
+      "Handles password analysis, policy validation, hashing, and credential protection."
+  },
+
+  {
+    name: "Key Lifecycle Manager",
+    description:
+      "Controls AES and RSA key generation, rotation, revocation, and secure storage."
+  },
+
+  {
+    name: "Encryption Engine",
+    description:
+      "Performs cryptographic operations for passwords, keys, and file protection workflows."
+  }
+
+
+    ],
+    agentsPoints: [
+
+  "Password security modules evaluate password strength, prevent password reuse, and enforce secure credential policies",
+
+  "Key lifecycle management services generate, rotate, revoke, and manage AES and RSA cryptographic keys securely",
+
+  "Encryption engines perform secure cryptographic operations for credentials, files, and protected data storage",
+
+  "Audit logging systems monitor user activities, security events, and cryptographic actions for traceability",
+
+  "File protection workflows support secure upload, encryption, decryption, and controlled document access",
+
+  "Modular cybersecurity architecture improves scalability, maintainability, compliance readiness, and future security feature integration"
+
+],
+
+    future: [
+      "Integrate multi-factor authentication and biometric verification for stronger identity protection",
+  "Support cloud-based key vault services and secure remote key management capabilities",
+  "Implement advanced threat detection, anomaly monitoring, and security analytics dashboards",
+  "Enhance compliance support through detailed reporting, governance controls, and policy automation",
+  "Introduce secure API integrations for enterprise applications and external encryption services",
+  "Explore Hardware Security Module (HSM) integration and post-quantum cryptography support for future-ready security"
+    ]
+  },
+
+  {
     id: "blogging-system",
 
     title: "Online Blogging System",
@@ -50,7 +200,10 @@ const projectsData = [
 
     architecture:
       "The Online Blogging System is built using Django’s MVC-based architecture with PostgreSQL for efficient data management, enabling secure authentication, dynamic content handling, and scalable full-stack web operations. The application separates frontend rendering, backend logic, and database interactions to maintain clean, maintainable, and modular development workflows.",
-    architecturePoints: [
+    
+      architectureImage: "/architectures/onlineblogging-architecture.png",
+    
+      architecturePoints: [
 
   "Django handles routing, authentication, session management, and backend request processing through modular application layers",
 
@@ -198,7 +351,10 @@ const projectsData = [
 
     architecture:
       "The Hospital Management System is built using the MERN stack architecture, enabling secure healthcare operations, real-time data handling, and scalable patient management workflows through modular frontend and backend integration. The system separates client interfaces, API services, authentication layers, and database operations to ensure maintainable and efficient healthcare application development.",
-architecturePoints: [
+
+    architectureImage: "",
+
+      architecturePoints: [
 
   "React.js powers responsive dashboards and interactive interfaces for patients, doctors, and administrators across the platform",
 

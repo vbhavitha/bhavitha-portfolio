@@ -44,7 +44,7 @@ export default function ProjectsPage() {
                 hover:-translate-y-1
                 transition-all duration-300
                 cursor-pointer
-                h-[460px]
+                h-[550px]
                 flex flex-col
                 justify-between
               "
@@ -139,7 +139,7 @@ export default function ProjectsPage() {
               </div>
 
               {/* BOTTOM */}
-              <div className="border-t border-white/10 pt-5">
+              <div className="border-t border-white/10 pt-6">
 
                 <p
                   className="

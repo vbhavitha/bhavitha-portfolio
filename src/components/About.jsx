@@ -69,7 +69,7 @@ export default function About() {
       </div>
 
       {/* ABOUT WRAPPER */}
-      <div className="relative max-w-[1450px] mx-auto">
+      <div className="relative max-w-[1400px] mx-auto">
 
         {/* PROFILE IMAGE */}
         <div
@@ -77,7 +77,7 @@ export default function About() {
             hidden lg:flex
 
             absolute
-            -left-14
+            -left-10
             top-1/2
             -translate-y-1/2
 
@@ -107,8 +107,8 @@ export default function About() {
             className="
               absolute
 
-              w-[470px]
-              h-[470px]
+              w-[400px]
+              h-[400px]
 
               rounded-full
 
@@ -125,20 +125,20 @@ export default function About() {
               relative
               z-10
 
-              w-[450px]
-              h-[450px]
+              w-[400px]
+              h-[400px]
 
               rounded-full
 
               object-cover
               object-top
 
-              border-[3px]
+              border-[5px]
               border-cyan-400/20
 
               shadow-[0_0_50px_rgba(34,211,238,0.18)]
 
-              hover:scale-105
+              hover:scale-100
 
               transition-all duration-500
             "

@@ -10,7 +10,7 @@ export default function Footer() {
 
     <footer className="text-white border-t border-white/10">
 
-      <div className="max-w-6xl mx-auto px-6 py-10">
+      <div className="max-w-6xl mx-auto px-4 py-4">
 
         {/* TOP SECTION */}
         <div
@@ -103,7 +103,7 @@ drop-shadow-[0_0_8px_rgba(34,211,238,0.35)]
         </div>
 
         {/* THIN LINE */}
-        <div className="border-t border-white/10 mt-8 pt-6">
+        <div className="border-t border-white/10 mt-2 pt-4">
 
           {/* COPYRIGHT */}
           <p className="text-center text-gray-300 text-xs">

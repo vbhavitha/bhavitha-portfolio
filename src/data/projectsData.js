@@ -1,6 +1,159 @@
 const projectsData = [
 
   {
+    id: "sentiment-analysis-platform",
+
+    title: "AI Sentiment Analysis Platform",
+
+    category: "AI & Machine Learning",
+
+    status: "completed",
+
+    duration: "2026",
+
+    description:
+      "An AI powered sentiment analytics platform that transforms textual data into actionable insights through AI-powered sentiment classification, comparative analysis, visual analytics, and automated reporting workflows.",
+
+    technologies: [
+      "Python",
+      "Flask",
+      "SQLite",
+      "Bootstrap",
+      "TextBlob",
+      "Transformers",
+      "DistilBERT",
+      "Pandas",
+      "Matplotlib",
+      "WordCloud",
+      "ReportLab"
+    ],
+
+    overview:
+      "Developed an AI-powered sentiment analysis platform using Flask, TextBlob, and DistilBERT to classify text as positive, negative, or neutral while providing polarity and subjectivity insights. The system supports single-text analysis, bulk CSV processing, sentiment comparison, keyword extraction, word cloud generation, visual analytics dashboards, and automated PDF/CSV reporting. Focused on machine learning integration, data visualization, NLP workflows, and scalable analytics architecture.",
+
+    problem:
+      "Organizations, researchers, and businesses often struggle to analyze large volumes of textual feedback, reviews, survey responses, and customer opinions efficiently. Manual sentiment evaluation is time-consuming, inconsistent, and difficult to scale. A modern sentiment analytics platform requires automated NLP processing, accurate sentiment classification, visual insight generation, comparative analysis, and report automation to support data-driven decision-making.",
+
+    problemPoints: [
+      "Large volumes of customer reviews and textual feedback are difficult to analyze manually",
+      "Organizations require automated sentiment classification for faster decision-making and trend identification",
+      "Users need visual analytics, keyword insights, and comparative sentiment analysis instead of raw text outputs",
+      "Businesses require exportable reports and scalable workflows for sentiment monitoring and performance tracking"
+    ],
+
+    problemConclusion:
+    "The implementation focuses on AI-driven natural language processing, sentiment analytics, visual reporting, and scalable data analysis workflows rather than manual text evaluation methods.",
+
+    goals: [
+      "Build an intelligent sentiment analysis platform capable of processing textual feedback efficiently",
+      "Provide accurate sentiment classification using TextBlob and transformer-based NLP models",
+      "Enable comparative sentiment analysis across multiple text inputs and datasets",
+      "Generate meaningful visual insights through charts, keyword extraction, and word cloud analytics",
+      "Support CSV uploads, bulk sentiment processing, and automated report generation workflows",
+      "Develop a scalable AI-powered analytics solution emphasizing usability, accuracy, and data-driven decision making"
+    ],
+
+    architecture:
+    "The AI Sentiment Analysis Platform follows a modular Flask-based architecture that combines natural language processing, machine learning models, analytics services, and reporting modules to transform textual data into actionable insights. The system separates user interfaces, NLP processing pipelines, visualization engines, and reporting workflows to ensure maintainable and scalable application development.",
+
+    architectureImage: "/architectures/sentiment-analysis-architecture.png",
+
+    architecturePoints: [
+
+      "Flask manages routing, user interactions, request handling, and application workflow orchestration",
+
+      "TextBlob and DistilBERT perform sentiment classification, polarity analysis, subjectivity scoring, and NLP processing",
+
+      "Pandas processes uploaded CSV datasets and manages large-scale sentiment analysis workflows efficiently",
+
+      "Analytics modules generate sentiment distributions, keyword extraction results, trend insights, and visual summaries",
+
+      "Visualization services create charts, graphs, and word clouds for intuitive sentiment interpretation",
+
+      "Reporting systems generate downloadable PDF and CSV reports for analytics sharing and business decision support"
+
+    ],
+
+    components: [
+
+      {
+        title: "Sentiment Classification Engine",
+        description:
+          "Analyzes text using TextBlob and DistilBERT models to determine sentiment categories and confidence metrics."
+      },
+
+      {
+         title: "Analytics Dashboard",
+        description:
+          "Provides visual insights including sentiment distribution charts, trends, and performance metrics."
+      },
+
+      {
+        title: "Bulk Analysis Module",
+        description:
+          "Processes CSV datasets and performs large-scale sentiment evaluation automatically."
+      },
+
+      {
+        title: "Report Generation System",
+        description:
+          "Creates downloadable PDF and CSV reports containing sentiment results and analytics summaries."
+      }
+
+    ],
+
+    agentsIntro:
+      "The AI Sentiment Analysis Platform integrates multiple analytics modules to process textual data, generate sentiment insights, visualize trends, and automate reporting workflows through intelligent NLP pipelines.",
+
+    agents: [
+
+      {
+        name: "NLP Processing Engine",
+        description:
+          "Handles text preprocessing, sentiment classification, and language analysis workflows."
+      },
+
+      {
+        name: "Analytics Manager",
+        description:
+          "Generates sentiment insights, comparative analysis, and statistical summaries."
+      },
+
+      {
+        name: "Visualization Engine",
+        description:
+          "Creates charts, graphs, and word clouds for intuitive sentiment interpretation."
+      }
+
+    ],
+
+    agentsPoints: [
+
+      "NLP modules preprocess textual content, extract linguistic features, and perform sentiment classification",
+
+      "TextBlob and DistilBERT models generate polarity scores, subjectivity measurements, and sentiment predictions",
+
+      "Analytics services identify sentiment distributions, keyword trends, and comparative insights across datasets",
+
+      "Visualization modules generate interactive charts, sentiment breakdowns, and word cloud representations",
+
+      "Bulk processing workflows analyze CSV datasets efficiently and support large-scale opinion mining operations",
+
+      "Modular AI architecture improves scalability, maintainability, reporting automation, and future machine learning integration"
+
+    ],
+
+    future: [
+      "Integrate multilingual sentiment analysis and language detection for global text processing capabilities",
+      "Implement real-time social media monitoring and sentiment tracking dashboards",
+      "Enhance prediction accuracy using advanced transformer models and fine-tuned NLP architectures",
+      "Introduce emotion detection and aspect-based sentiment analysis for deeper contextual insights",
+      "Deploy cloud-based analytics infrastructure to support large-scale enterprise sentiment monitoring",
+      "Explore generative AI-powered summarization and recommendation systems for automated insight generation"
+    ]
+  },
+
+  {
     id: "Securepass-kms",
 
     title: "SecurePass - KMS",
@@ -20,81 +173,84 @@ const projectsData = [
       "SQLite",
       "HTML",
       "CSS",
-  "Cryptography",
-  "Hashlib",
-  "zxcvbn"
+      "JavaScript",
+      "Bootstrap",
+      "Cryptography",
+      "Hashlib",
+      "zxcvbn"
     ],
 
     overview:
       "Developed a secure cryptographic key management and password security platform using Flask and SQLite. The system provides password strength analysis, AES and RSA key lifecycle management, secure credential storage, audit logging, password history enforcement, and encrypted file protection workflows. Focused on cybersecurity best practices, cryptographic operations, secure authentication, and scalable backend architecture.",
 
     problem:
-"Managing passwords, encryption keys, and sensitive files securely becomes increasingly difficult as users handle multiple digital assets across different platforms. Traditional storage methods often lack strong encryption, centralized key management, audit visibility, and password security controls. A secure cryptographic key management platform requires robust encryption workflows, password policy enforcement, key lifecycle management, and protected file handling to minimize security risks and unauthorized access.",
+      "Managing passwords, encryption keys, and sensitive files securely becomes increasingly difficult as users handle multiple digital assets across different platforms. Traditional storage methods often lack strong encryption, centralized key management, audit visibility, and password security controls. A secure cryptographic key management platform requires robust encryption workflows, password policy enforcement, key lifecycle management, and protected file handling to minimize security risks and unauthorized access.",
 
     problemPoints: [
-  "Users require secure storage and management of passwords, encryption keys, and sensitive digital assets",
-  "Weak passwords and password reuse increase the risk of credential compromise and unauthorized access",
-  "Encryption keys must be generated, rotated, revoked, and managed securely throughout their lifecycle",
-  "Organizations need audit visibility, secure file protection, and traceable security operations"
-],
+      "Users require secure storage and management of passwords, encryption keys, and sensitive digital assets",
+      "Weak passwords and password reuse increase the risk of credential compromise and unauthorized access",
+      "Encryption keys must be generated, rotated, revoked, and managed securely throughout their lifecycle",
+      "Organizations need audit visibility, secure file protection, and traceable security operations"
+    ],
 
     problemConclusion:
-"The implementation focuses on secure cryptographic architecture, password security enforcement, encryption key lifecycle management, audit monitoring, and protected file handling rather than traditional password storage solutions.",
+    "The implementation focuses on secure cryptographic architecture, password security enforcement, encryption key lifecycle management, audit monitoring, and protected file handling rather than traditional password storage solutions.",
 
     goals: [
-  "Build a secure cryptographic key management platform for protecting sensitive credentials and digital assets",
-  "Enable AES and RSA key generation, rotation, revocation, and lifecycle management through structured workflows",
-  "Implement password strength analysis, password history enforcement, and secure credential storage mechanisms",
-  "Provide encrypted file upload, encryption, decryption, and secure download capabilities for protected documents",
-  "Maintain comprehensive audit logging and security monitoring for critical user and cryptographic operations",
-  "Develop a scalable cybersecurity-focused application emphasizing encryption, security, and maintainable architecture"
-],
+      "Build a secure cryptographic key management platform for protecting sensitive credentials and digital assets",
+      "Enable AES and RSA key generation, rotation, revocation, and lifecycle management through structured workflows",
+      "Implement password strength analysis, password history enforcement, and secure credential storage mechanisms",
+      "Provide encrypted file upload, encryption, decryption, and secure download capabilities for protected documents",
+      "Maintain comprehensive audit logging and security monitoring for critical user and cryptographic operations",
+      "Develop a scalable cybersecurity-focused application emphasizing encryption, security, and maintainable architecture"
+    ],
 
     architecture:
-"The SecurePass KMS platform is built using Flask-based modular architecture with SQLite for secure data management, enabling password security services, cryptographic key lifecycle operations, audit monitoring, and encrypted file protection workflows. The system separates frontend interfaces, business logic, encryption services, and database operations to ensure maintainable and security-focused application development.",
+    "The SecurePass KMS platform is built using Flask-based modular architecture with SQLite for secure data management, enabling password security services, cryptographic key lifecycle operations, audit monitoring, and encrypted file protection workflows. The system separates frontend interfaces, business logic, encryption services, and database operations to ensure maintainable and security-focused application development.",
 
-architectureImage: "/architectures/securepass-architecture.png",
+    architectureImage: "/architectures/securepass-architecture.png",
 
-architecturePoints: [
+    architecturePoints: [
 
-  "Flask handles routing, authentication workflows, backend processing, and security service orchestration",
+      "Flask handles routing, authentication workflows, backend processing, and security service orchestration",
 
-  "SQLite manages encrypted credential records, cryptographic metadata, audit logs, and application data securely",
+      "SQLite manages encrypted credential records, cryptographic metadata, audit logs, and application data securely",
 
-  "Cryptography libraries provide AES encryption, RSA key management, secure key generation, and cryptographic operations",
+      "Cryptography libraries provide AES encryption, RSA key management, secure key generation, and cryptographic operations",
 
-  "Password security modules perform strength analysis, password history validation, hashing, and policy enforcement",
+      "Password security modules perform strength analysis, password history validation, hashing, and policy enforcement",
 
-  "File protection services support secure upload, encryption, decryption, and protected document management workflows",
+      "File protection services support secure upload, encryption, decryption, and protected document management workflows",
 
-  "Modular security architecture improves maintainability, scalability, auditability, and future cybersecurity feature integration"
+      "Modular security architecture improves maintainability, scalability, auditability, and future cybersecurity feature integration"
 
-],
+    ],
+
     components: [
 
       {
-    title: "Password Security Module",
-    description:
-      "Performs password strength analysis, secure hashing, history validation, and policy enforcement."
-  },
+        title: "Password Security Module",
+        description:
+          "Performs password strength analysis, secure hashing, history validation, and policy enforcement."
+      },
 
-  {
-    title: "Key Management Service",
-    description:
-      "Handles AES and RSA key generation, rotation, revocation, and lifecycle management."
-  },
+      {
+        title: "Key Management Service",
+        description:
+          "Handles AES and RSA key generation, rotation, revocation, and lifecycle management."
+      },
 
-  {
-    title: "Audit Logging System",
-    description:
-      "Tracks security events, user actions, cryptographic operations, and compliance-related activities."
-  },
+      {
+        title: "Audit Logging System",
+        description:
+          "Tracks security events, user actions, cryptographic operations, and compliance-related activities."
+      },
 
-  {
-    title: "File Encryption Service",
-    description:
-      "Provides secure file encryption, decryption, storage, and protected document workflows."
-  }
+      {
+        title: "File Encryption Service",
+        description:
+          "Provides secure file encryption, decryption, storage, and protected document workflows."
+      }
 
 
     ],
@@ -105,48 +261,46 @@ architecturePoints: [
     agents: [
 
       {
-    name: "Password Security Manager",
-    description:
-      "Handles password analysis, policy validation, hashing, and credential protection."
-  },
+      name: "Password Security Manager",
+      description:
+        "Handles password analysis, policy validation, hashing, and credential protection."
+      },
 
-  {
-    name: "Key Lifecycle Manager",
-    description:
-      "Controls AES and RSA key generation, rotation, revocation, and secure storage."
-  },
+      {
+        name: "Key Lifecycle Manager",
+        description:
+          "Controls AES and RSA key generation, rotation, revocation, and secure storage."
+      },
 
-  {
-    name: "Encryption Engine",
-    description:
-      "Performs cryptographic operations for passwords, keys, and file protection workflows."
-  }
-
-
+      {
+        name: "Encryption Engine",
+        description:
+          "Performs cryptographic operations for passwords, keys, and file protection workflows."
+      }
     ],
     agentsPoints: [
 
-  "Password security modules evaluate password strength, prevent password reuse, and enforce secure credential policies",
+      "Password security modules evaluate password strength, prevent password reuse, and enforce secure credential policies",
 
-  "Key lifecycle management services generate, rotate, revoke, and manage AES and RSA cryptographic keys securely",
+      "Key lifecycle management services generate, rotate, revoke, and manage AES and RSA cryptographic keys securely",
 
-  "Encryption engines perform secure cryptographic operations for credentials, files, and protected data storage",
+      "Encryption engines perform secure cryptographic operations for credentials, files, and protected data storage",
 
-  "Audit logging systems monitor user activities, security events, and cryptographic actions for traceability",
+      "Audit logging systems monitor user activities, security events, and cryptographic actions for traceability",
 
-  "File protection workflows support secure upload, encryption, decryption, and controlled document access",
+      "File protection workflows support secure upload, encryption, decryption, and controlled document access",
 
-  "Modular cybersecurity architecture improves scalability, maintainability, compliance readiness, and future security feature integration"
+      "Modular cybersecurity architecture improves scalability, maintainability, compliance readiness, and future security feature integration"
 
-],
+    ],
 
     future: [
       "Integrate multi-factor authentication and biometric verification for stronger identity protection",
-  "Support cloud-based key vault services and secure remote key management capabilities",
-  "Implement advanced threat detection, anomaly monitoring, and security analytics dashboards",
-  "Enhance compliance support through detailed reporting, governance controls, and policy automation",
-  "Introduce secure API integrations for enterprise applications and external encryption services",
-  "Explore Hardware Security Module (HSM) integration and post-quantum cryptography support for future-ready security"
+      "Support cloud-based key vault services and secure remote key management capabilities",
+      "Implement advanced threat detection, anomaly monitoring, and security analytics dashboards",
+      "Enhance compliance support through detailed reporting, governance controls, and policy automation",
+      "Introduce secure API integrations for enterprise applications and external encryption services",
+      "Explore Hardware Security Module (HSM) integration and post-quantum cryptography support for future-ready security"
     ]
   },
 
@@ -201,23 +355,23 @@ architecturePoints: [
     architecture:
       "The Online Blogging System is built using Django’s MVC-based architecture with PostgreSQL for efficient data management, enabling secure authentication, dynamic content handling, and scalable full-stack web operations. The application separates frontend rendering, backend logic, and database interactions to maintain clean, maintainable, and modular development workflows.",
     
-      architectureImage: "/architectures/onlineblogging-architecture.png",
+    architectureImage: "/architectures/onlineblogging-architecture.png",
     
-      architecturePoints: [
+    architecturePoints: [
 
-  "Django handles routing, authentication, session management, and backend request processing through modular application layers",
+      "Django handles routing, authentication, session management, and backend request processing through modular application layers",
 
-  "PostgreSQL manages user data, blog posts, categories, and content relationships with reliable database operations",
+      "PostgreSQL manages user data, blog posts, categories, and content relationships with reliable database operations",
 
-  "The frontend uses HTML, CSS, Bootstrap, and Django Templates to deliver responsive and interactive user experiences",
+      "The frontend uses HTML, CSS, Bootstrap, and Django Templates to deliver responsive and interactive user experiences",
 
-  "CRUD workflows are integrated with secure validation mechanisms for creating, editing, updating, and deleting blog content",
+      "CRUD workflows are integrated with secure validation mechanisms for creating, editing, updating, and deleting blog content",
 
-  "Authentication and authorization systems ensure protected access control for users, admins, and content management operations",
+      "Authentication and authorization systems ensure protected access control for users, admins, and content management operations",
 
-  "Modular backend structure improves scalability, maintainability, and future feature integration across the platform"
+      "Modular backend structure improves scalability, maintainability, and future feature integration across the platform"
 
-],
+    ],
     components: [
 
       {
@@ -279,19 +433,19 @@ architecturePoints: [
     ],
     agentsPoints: [
 
-  "Authentication module manages secure user registration, login sessions, authorization, and access control validation",
+      "Authentication module manages secure user registration, login sessions, authorization, and access control validation",
 
-  "Blog management module handles creating, editing, deleting, categorizing, and publishing blog content dynamically",
+      "Blog management module handles creating, editing, deleting, categorizing, and publishing blog content dynamically",
 
-  "Database layer uses PostgreSQL with Django ORM for structured queries, relationship handling, and reliable data persistence",
+      "Database layer uses PostgreSQL with Django ORM for structured queries, relationship handling, and reliable data persistence",
 
-  "Frontend components render responsive pages, interactive blog views, and seamless navigation using Bootstrap and Django Templates",
+      "Frontend components render responsive pages, interactive blog views, and seamless navigation using Bootstrap and Django Templates",
 
-  "Admin tools support content moderation, user management, category organization, and streamlined platform maintenance workflows",
+      "Admin tools support content moderation, user management, category organization, and streamlined platform maintenance workflows",
 
-  "Modular application structure enables scalable feature integration, clean backend orchestration, and maintainable full-stack development practices"
+      "Modular application structure enables scalable feature integration, clean backend orchestration, and maintainable full-stack development practices"
 
-],
+    ],
 
     future: [
       "Introduce advanced features such as likes, comments, bookmarks, and personalized user dashboards to improve engagement and interaction",
@@ -354,21 +508,21 @@ architecturePoints: [
 
     architectureImage: "",
 
-      architecturePoints: [
+    architecturePoints: [
 
-  "React.js powers responsive dashboards and interactive interfaces for patients, doctors, and administrators across the platform",
+      "React.js powers responsive dashboards and interactive interfaces for patients, doctors, and administrators across the platform",
 
-  "Node.js and Express.js handle backend APIs, authentication workflows, request processing, and hospital management operations securely",
+      "Node.js and Express.js handle backend APIs, authentication workflows, request processing, and hospital management operations securely",
 
-  "MongoDB manages patient records, appointment data, doctor schedules, and healthcare information with flexible and scalable database operations",
+      "MongoDB manages patient records, appointment data, doctor schedules, and healthcare information with flexible and scalable database operations",
 
-  "RESTful APIs coordinate communication between frontend components and backend services for real-time workflow execution",
+      "RESTful APIs coordinate communication between frontend components and backend services for real-time workflow execution",
 
-  "Authentication and authorization layers provide secure access control, protected medical data handling, and role-based user management",
+      "Authentication and authorization layers provide secure access control, protected medical data handling, and role-based user management",
 
-  "Modular MERN stack architecture improves scalability, maintainability, performance optimization, and future healthcare system integration"
+      "Modular MERN stack architecture improves scalability, maintainability, performance optimization, and future healthcare system integration"
 
-],
+    ],
     components: [
 
       {
@@ -430,19 +584,19 @@ architecturePoints: [
     ],
     agentsPoints: [
 
-  "Patient management module handles registration, medical records, profile updates, and healthcare data organization securely",
+      "Patient management module handles registration, medical records, profile updates, and healthcare data organization securely",
 
-  "Appointment scheduling system manages doctor availability, booking workflows, real-time updates, and patient-doctor coordination",
+      "Appointment scheduling system manages doctor availability, booking workflows, real-time updates, and patient-doctor coordination",
 
-  "Authentication and access control modules provide secure login systems, role-based permissions, and protected medical information handling",
+      "Authentication and access control modules provide secure login systems, role-based permissions, and protected medical information handling",
 
-  "Backend API services process hospital operations, database communication, billing workflows, and administrative management tasks efficiently",
+      "Backend API services process hospital operations, database communication, billing workflows, and administrative management tasks efficiently",
 
-  "React-based frontend components deliver responsive dashboards, interactive interfaces, and seamless navigation for all hospital users",
+      "React-based frontend components deliver responsive dashboards, interactive interfaces, and seamless navigation for all hospital users",
 
-  "Modular MERN stack structure improves scalability, maintainability, healthcare workflow automation, and future integration capabilities across the system"
+      "Modular MERN stack structure improves scalability, maintainability, healthcare workflow automation, and future integration capabilities across the system"
 
-],
+    ],
 
     future: [
       "Integrate AI-powered health assistance, symptom analysis, and smart appointment recommendations to enhance patient care experiences",
@@ -453,6 +607,8 @@ architecturePoints: [
       "Explore IoT and wearable device integration for real-time patient monitoring and smarter healthcare workflow automation"
     ]
   },
+
+
   {
   id: "mental-health-system",
 

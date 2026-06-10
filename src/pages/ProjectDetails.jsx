@@ -539,7 +539,7 @@ export default function ProjectDetails() {
       <div
         className="
           border-t border-white/10
-          mt-24 pt-10
+          mt-24 pt-2
           flex justify-between items-center
           px-20
         "
@@ -638,7 +638,7 @@ export default function ProjectDetails() {
       {/* FOOTER */}
       
 
-        <div className="mt-12">
+        <div className="mt-4">
 
   <Footer />
 

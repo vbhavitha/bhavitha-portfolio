@@ -20,27 +20,12 @@ export default function Education() {
       gpa: "CGPA: 9.35 / 10",
 
       points: [
-        "Specializing in Cybersecurity & Blockchain Technology.",
+        "Specialized in Cybersecurity & Blockchain Technology.",
         "Built projects using MERN Stack, Django, and secure system design.",
         "Explored cybersecurity practices, authentication systems, and cloud computing.",
         "Participated in internships, hackathons, and cybersecurity workshops.",
       ],
     },
-    /*{
-      degree: "Bachelor of Technology",
-      specialization: "Computer Science and Engineering",
-      institute: "KL University",
-      location: "Guntur, Andhra Pradesh",
-      period: "2022 — 2026",
-      gpa: "CGPA: 9.35 / 10",
-
-      points: [
-        "Specializing in Cybersecurity & Blockchain Technology.",
-        "Built projects using MERN Stack, Django, and secure system design.",
-        "Explored cybersecurity practices, authentication systems, and cloud computing.",
-        "Participated in internships, hackathons, and cybersecurity workshops.",
-      ],
-    },*/
 
 
   ];
@@ -263,36 +248,6 @@ drop-shadow-[0_0_20px_rgba(168,85,247,0.25)]
 
 </div>
 
-{/* BOTTOM BUTTON */}
-<div className="flex justify-center mt-16">
-
-  <Link
-    to="/certifications"
-    onClick={() => window.scrollTo(0, 0)}
-
-    className="
-      flex items-center gap-2
-      text-cyan-300
-      text-lg
-      font-semibold
-
-      hover:text-cyan-200
-      hover:gap-3
-
-      transition
-      duration-200
-
-      drop-shadow-[0_0_10px_rgba(34,211,238,0.45)]
-    "
-  >
-
-    View my certifications
-
-    <ArrowRight size={22} />
-
-  </Link>
-
-</div>
 
 </section>
   );

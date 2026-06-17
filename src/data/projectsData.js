@@ -1,7 +1,7 @@
 const projectsData = [
 
   {
-    id: "sentiment-analysis-platform",
+    id: "sentiment-analysis",
 
     title: "AI Sentiment Analysis Platform",
 
@@ -154,7 +154,7 @@ const projectsData = [
   },
 
   {
-    id: "Securepass-kms",
+    id: "securepass-kms",
 
     title: "SecurePass - KMS",
 

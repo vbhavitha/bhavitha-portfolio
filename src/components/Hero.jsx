@@ -110,9 +110,7 @@ export default function Hero() {
             <Typewriter
               words={[
                 "Cybersecurity Enthusiast",
-                "MERN Stack Developer",
-                "Django Developer",
-                "Cloud Learner",
+                "Full Stack Developer",
               ]}
               loop={0}
               cursor
@@ -136,9 +134,7 @@ export default function Hero() {
             "
           >
 
-            Designing and building secure scalable applications with
-            modern technologies while focusing on cybersecurity,
-            cloud systems, and performance optimization.
+            Building secure web applications with MERN, Django, PostgreSQL and Cloud Technologies.
 
           </p>
 

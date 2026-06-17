@@ -17,20 +17,12 @@ export default function Experience() {
 
       period: "May 2024 — Jun 2024",
 
-      points: [
-        "Developed a secure online blogging platform using Django with features for user authentication, post creation, and commenting.",
-
-        "Integrated PostgreSQL with Django ORM and implemented security measures including CSRF protection, password hashing, and input validation.",
-
-        "Designed a responsive Bootstrap-based user interface and followed MVC architecture for scalable and maintainable development.",
+      points: [ "Built a secure Django blogging platform with authentication and post management.", 
+        "Integrated PostgreSQL and implemented password hashing, CSRF protection, and input validation.", 
+        "Designed a responsive Bootstrap UI following scalable MVC architecture.", 
       ],
 
-      tech: [
-        "Django",
-        "PostgreSQL",
-        "Bootstrap",
-        "Responsive UI",
-      ],
+      tech: [ "Django", "PostgreSQL", "Bootstrap", "Responsive UI", ],
     },
 
     {
@@ -44,12 +36,9 @@ export default function Experience() {
 
       period: "Apr 2024 — May 2024",
 
-      points: [
-        "Completed ISRO’s START program focused on space science, satellite communication, astronomy, and remote sensing technologies.",
-
-        "Learned about Indian space missions, satellite systems, heliophysics, and emerging research areas through sessions conducted by ISRO scientists.",
-
-        "Explored applications of cybersecurity, secure communication, and data management in space and satellite networks.",
+      points: [ "Completed ISRO's START program covering space science and satellite communication.", 
+        "Learned about Indian space missions, heliophysics, and satellite systems from ISRO scientists.", 
+        "Explored cybersecurity and secure communication in satellite networks.", 
       ],
 
       tech: [
@@ -96,7 +85,7 @@ export default function Experience() {
 drop-shadow-[0_0_20px_rgba(168,85,247,0.25)]
   "
 >
-          Where I've Worked
+          Professional Experience
         </h2>
 
         <p
@@ -108,7 +97,7 @@ drop-shadow-[0_0_20px_rgba(168,85,247,0.25)]
     tracking-wide
   "
 >
-          My professional journey so far
+          Internships, training programs, and industry experience
         </p>
 
       </div>

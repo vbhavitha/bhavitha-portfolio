@@ -1,88 +1,25 @@
 import { motion } from "framer-motion";
 
-import {
-  Code2,
-  Server,
-  Database,
-  Cloud,
-  Shield,
-  Boxes,
-} from "lucide-react";
+import { Link } from "react-router-dom"; 
+
+import { Code2, Server, Database, Cloud, Shield, ArrowRight, } from "lucide-react";
 
 export default function Skills() {
 
   const skillCategories = [
 
-    {
-      title: "Languages",
-      icon: <Code2 size={20} />,
-      skills: [
-        "Python",
-        "C",
-        "Java",
-        "JavaScript",
-      ],
-    },
+    {title: "Programming", icon: <Code2 size={20} />, skills: [ "C", "Python", "Java", "JavaScript", ], },
+
+    {title: "Full Stack", icon: <Server size={20} />, skills: [ "React", "Node.js", "Django", "REST APIs", ], },
+
+    {title: "Databases", icon: <Database size={20} />, skills: [ "PostgreSQL", "MongoDB", ], },
+
+    {title: "Cloud & Dev Tools", icon: <Cloud size={20} />, skills: [ "AWS", "Linux", "Git", ], },
 
     {
-      title: "Web Development",
-      icon: <Server size={20} />,
-      skills: [
-        "React.js",
-        "Node.js",
-        "Express.js",
-        "Django",
-        "REST APIs",
-        "Bootstrap",
-      ],
-    },
+      title: "Cybersecurity", icon: <Shield size={20} />, skills: [ "Burp Suite", "Nmap", "Kali Linux", "Network Security", ], },
 
-    {
-      title: "Cloud & Tools",
-      icon: <Cloud size={20} />,
-      skills: [
-        "AWS",
-        "GitHub",
-        "Linux",
-        "Postman",
-        "Power BI",
-      ],
-    },
-
-    {
-      title: "Databases",
-      icon: <Database size={20} />,
-      skills: [
-        "MySQL",
-        "PostgreSQL",
-        "MongoDB",
-        "SQL",
-      ],
-    },
-
-    {
-      title: "Cybersecurity",
-      icon: <Shield size={20} />,
-      skills: [
-        "Kali Linux",
-        "Burp Suite",
-        "Nmap",
-        "Encryption",
-        "Network Security",
-      ],
-    },
-
-    {
-      title: "Concepts",
-      icon: <Boxes size={20} />,
-      skills: [
-        "RBAC",
-        "Authentication",
-        "Microservices",
-        "CI/CD",
-        "Blockchain",
-      ],
-    },
+    
 
   ];
 
@@ -120,7 +57,7 @@ export default function Skills() {
 drop-shadow-[0_0_20px_rgba(168,85,247,0.25)]
   "
 >
-          Tech Pile
+          Technical Expertise
         </h2>
 
         <p
@@ -229,6 +166,37 @@ drop-shadow-[0_0_20px_rgba(168,85,247,0.25)]
         ))}
 
       </div>
+
+      {/* BOTTOM BUTTON */}
+<div className="flex justify-center mt-16">
+
+  <Link
+    to="/certifications"
+    onClick={() => window.scrollTo(0, 0)}
+
+    className="
+      flex items-center gap-2
+      text-cyan-300
+      text-lg
+      font-semibold
+
+      hover:text-cyan-200
+      hover:gap-3
+
+      transition
+      duration-200
+
+      drop-shadow-[0_0_10px_rgba(34,211,238,0.45)]
+    "
+  >
+
+    View my certifications
+
+    <ArrowRight size={22} />
+
+  </Link>
+
+</div>
 
     </section>
   );

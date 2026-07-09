@@ -7,7 +7,7 @@ const projectsData = [
 
     category: "AI & Large Language Models",
 
-    status: "completed",
+    status: "in-progress",
 
     duration: "2026",
 

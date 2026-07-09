@@ -9,6 +9,23 @@ export default function Projects() {
   const projects = [
 
     {
+      id: "recalliq",
+      status: "completed",
+      category: "AI & LLM",
+      title: "RecallIQ - AI Chat Assistant",
+      description:
+        "Developed an AI-powered conversational assistant with Google's Gemini API featuring context-aware conversations, persistent memory, secure authentication, and intelligent real-time chat experiences.",
+      tech: [
+        "Python",
+        "Flask",
+        "Gemini API",
+        "SQLite",
+        "SQLAlchemy",
+        "LLMs"
+      ],
+    },
+
+    {
       id: "sentiment-analysis",
       status: "completed",
       category: "AI & NLP",

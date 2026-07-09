@@ -1,6 +1,159 @@
 const projectsData = [
 
   {
+    id: "recalliq",
+
+    title: "RecallIQ - AI Chat Assistant",
+
+    category: "AI & Large Language Models",
+
+    status: "completed",
+
+    duration: "2026",
+
+    description:
+      "An intelligent AI-powered conversational assistant that delivers context-aware interactions through large language models, persistent memory, secure authentication, and seamless real-time chat experiences.",
+
+    technologies: [
+      "Python",
+      "Flask",
+      "SQLite",
+      "Bootstrap",
+      "Google Gemini API",
+      "LLMs",
+      "REST APIs",
+      "SQLAlchemy",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+
+    overview:
+      "Developed RecallIQ, an AI-powered conversational assistant using Flask and Google's Gemini API to provide intelligent, context-aware responses with persistent conversation memory. The platform supports secure user authentication, real-time chat, conversation history, session management, and personalized AI interactions. Focused on LLM integration, scalable backend architecture, database management, and modern conversational AI workflows.",
+
+    problem:
+      "Traditional chatbot systems often lose conversational context, provide generic responses, and fail to personalize user interactions across multiple sessions. Modern AI assistants require persistent memory, secure authentication, scalable conversation management, and intelligent language models to deliver natural, context-aware, and personalized conversational experiences.",
+
+    problemPoints: [
+      "AI assistants should remember previous conversations for personalized user interactions",
+      "Users require secure authentication and protected access to private conversation history",
+      "Conversation data must be stored efficiently while maintaining context across multiple sessions",
+      "Modern chat applications require scalable backend architecture and real-time AI response generation"
+    ],
+
+    problemConclusion:
+      "The implementation focuses on large language model integration, persistent conversational memory, secure authentication, and scalable AI-powered chat architecture rather than traditional stateless chatbot systems.",
+
+    goals: [
+      "Build an intelligent conversational AI assistant powered by Google's Gemini large language model",
+      "Enable persistent conversation memory for personalized and context-aware interactions",
+      "Provide secure authentication and protected user-specific chat history management",
+      "Deliver responsive real-time chat experiences through efficient backend architecture",
+      "Maintain scalable conversation storage using SQLAlchemy and SQLite database integration",
+      "Develop a maintainable AI application emphasizing usability, performance, and intelligent conversational experiences"
+    ],
+
+    architecture:
+      "RecallIQ follows a modular Flask architecture integrating Google's Gemini API, SQLAlchemy database services, authentication systems, memory management, and conversational workflows. The platform separates frontend interfaces, backend logic, AI processing, and persistent data storage into maintainable and scalable application components.",
+
+    architectureImage: "/architectures/recalliq-architecture.png",
+
+    architecturePoints: [
+
+      "Flask manages routing, authentication, request processing, and AI workflow orchestration",
+
+      "Google Gemini API generates intelligent, context-aware conversational responses using large language models",
+
+      "SQLAlchemy and SQLite manage user accounts, conversations, chat history, and persistent memory efficiently",
+
+      "Authentication services provide secure user registration, login, session management, and protected access control",
+
+      "Conversation management modules maintain chat history, contextual memory, and personalized AI interactions",
+
+      "Modular architecture improves scalability, maintainability, API integration, and future AI feature expansion"
+
+    ],
+
+    components: [
+
+      {
+        title: "LLM Conversation Engine",
+        description:
+          "Generates intelligent, context-aware responses using Google's Gemini large language model."
+      },
+
+      {
+        title: "Conversation Memory",
+        description:
+          "Stores chat history and maintains conversational context for personalized user experiences."
+      },
+
+      {
+        title: "Authentication System",
+        description:
+          "Provides secure registration, login, session management, and protected user access."
+      },
+
+      {
+        title: "Chat Management Module",
+        description:
+          "Handles conversation creation, retrieval, storage, and seamless real-time messaging."
+      }
+
+    ],
+
+    agentsIntro:
+      "RecallIQ integrates multiple AI-powered services to manage user authentication, conversational memory, language model interactions, and intelligent chat workflows through a modular application architecture.",
+
+    agents: [
+
+      {
+        name: "LLM Response Engine",
+        description:
+          "Processes prompts and generates intelligent conversational responses using Gemini."
+      },
+
+      {
+        name: "Memory Manager",
+        description:
+          "Maintains conversation history and contextual information across user sessions."
+      },
+
+      {
+        name: "Conversation Manager",
+        description:
+          "Organizes chat sessions, stores interactions, and retrieves historical conversations."
+      }
+
+    ],
+
+    agentsPoints: [
+
+      "Language model services process prompts and generate context-aware conversational responses",
+
+      "Conversation memory modules preserve previous interactions for personalized AI experiences",
+
+      "Authentication systems securely manage user accounts, sessions, and protected conversation access",
+
+      "Database services organize users, chats, and persistent conversational history efficiently",
+
+      "Chat management workflows coordinate message handling, storage, retrieval, and conversation continuity",
+
+      "Modular AI architecture improves scalability, maintainability, LLM integration, and future intelligent assistant capabilities"
+
+    ],
+
+    future: [
+      "Integrate Retrieval-Augmented Generation (RAG) for knowledge-aware conversations",
+      "Support multimodal interactions with image, document, and voice understanding",
+      "Implement speech-to-text and text-to-speech for voice-based AI conversations",
+      "Introduce AI agents capable of task automation, scheduling, and workflow assistance",
+      "Deploy cloud infrastructure with scalable vector databases for long-term memory",
+      "Explore multi-agent collaboration and advanced reasoning capabilities for enterprise AI assistants"
+    ]
+  },
+
+  {
     id: "sentiment-analysis",
 
     title: "AI Sentiment Analysis Platform",

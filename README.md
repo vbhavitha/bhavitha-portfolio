@@ -331,6 +331,6 @@ git clone https://github.com/vbhavitha/bhavitha-portfolio.git
 
 ---
 
-# Check out my portfolio:
+Portfolio link:
 
 https://bhavitha-portfolio-3apq.vercel.app/
